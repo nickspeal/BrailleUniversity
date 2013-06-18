@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0nL-JL-Ldg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5xp-D4-zCF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="0nL-JL-Ldg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8mV-nS-8gO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="m3K-DE-NIp">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="g0g-CK-itu" kind="relationship" relationship="rootViewController" id="lsC-VP-W6P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TSy-jd-rfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1660" y="-830"/>
+        </scene>
+        <!--View Controller - Welcome to Campus-->
+        <scene sceneID="5aa-KO-j56">
+            <objects>
+                <viewController id="g0g-CK-itu" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zwa-8l-OA8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oX-VN-GSQ">
+                                <accessibility key="accessibilityConfiguration" hint="Start teaching a lesson and have it recorded for playback later" label="Teach a Lesson"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="7jo-br-5Wm"/>
+                                    <constraint firstAttribute="height" constant="100" id="Vbx-z5-CB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Teach a Lesson">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="newLessonStarted:" destination="g0g-CK-itu" eventType="touchUpInside" id="4sn-4M-EvK"/>
+                                    <segue destination="2" kind="push" identifier="newLessonSegue" id="YYR-MD-Dto"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJw-YE-ceX">
+                                <accessibility key="accessibilityConfiguration" hint="Play back a previously recorded lesson"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="1gD-o8-r2z"/>
+                                    <constraint firstAttribute="height" constant="100" id="Bek-0n-Y1t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Go to the Library">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6QS-9N-594" kind="push" id="w8n-im-Vlu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-T2-nib">
+                                <accessibility key="accessibilityConfiguration" hint="Provides helpful information about the application and directions for using it"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VFX-7S-vin"/>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="dKu-48-gmU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Help Desk">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="E6h-XM-poV" kind="push" id="viL-PW-agw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z2L-T2-nib" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="244" id="4VE-bf-02P"/>
+                            <constraint firstItem="z2L-T2-nib" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="BhU-Hj-E33"/>
+                            <constraint firstItem="OJw-YE-ceX" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="144" id="EKY-Ns-DA5"/>
+                            <constraint firstItem="OJw-YE-ceX" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="ILA-hR-OrI"/>
+                            <constraint firstItem="7oX-VN-GSQ" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="44" id="UQF-Ag-8YO"/>
+                            <constraint firstItem="7oX-VN-GSQ" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="aJV-Dq-Dwc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome to Campus" id="oZh-qh-64E">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="LP0-xP-1Jm"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USE-iy-fLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2120" y="-384"/>
+        </scene>
+        <!--TeachA Lesson View Controller Subclass - Teach a Lesson-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="teachALessonViewControllerSubclass" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="583-OX-38m">
+                                <accessibility key="accessibilityConfiguration" hint="You'll get to save or quit on the next page"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="S2X-Xt-7UE"/>
+                                    <constraint firstAttribute="height" constant="374" id="zr9-4K-Zu9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="End Lesson">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Sf5-1K-mpk" kind="push" identifier="endSegue" id="PNk-5z-73m"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Begin Typing Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-Lq-ThK">
+                                <accessibility key="accessibilityConfiguration" hint="To record a lesson, begin typing what you want to appear on the braille output display"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="TwV-nU-Kdm"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-l7-v6n" customClass="SelectableUILable">
+                                <color key="backgroundColor" red="0.9228515625" green="0.9228515625" blue="0.9228515625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="lK5-T8-piM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="07d-Ka-iLp"/>
+                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="46" id="9ES-9B-YfW"/>
+                            <constraint firstItem="ACn-l7-v6n" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="G6A-fo-j0u"/>
+                            <constraint firstItem="583-OX-38m" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Kbj-y0-qKK"/>
+                            <constraint firstItem="ACn-l7-v6n" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="NJK-Oy-JAR"/>
+                            <constraint firstItem="583-OX-38m" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="URL-uZ-9BK"/>
+                            <constraint firstItem="ACn-l7-v6n" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="bBQ-tw-peo"/>
+                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="yJQ-50-4He"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Teach a Lesson" id="koe-oV-OQG">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="X3Q-hN-8IB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lessonEntryField" destination="1oO-Lq-ThK" id="gZe-Gg-iUj"/>
+                        <outlet property="lessonFeedbackLabel" destination="ACn-l7-v6n" id="sWc-rC-CsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1293" y="-384"/>
+        </scene>
+        <!--View Controller - Help Desk-->
+        <scene sceneID="2S4-kh-Aqm">
+            <objects>
+                <viewController id="E6h-XM-poV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E3y-fh-SX4">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-i0-zlJ">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-gj-MHj" userLabel="ViewTop">
+                                        <subviews>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="pYS-UI-zU3">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Qo2-IK-vw5"/>
+                                                </constraints>
+                                                <string key="text">Welcome to the Help Desk. Swipe right to hear the next item. The back button is in the top-left of the page to return to campus.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="Teach your students to read Braille on a refreshable braille display with this completely accessible app." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ard-Zh-rWS">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="320" id="g4b-3K-YP0"/>
+                                                    <constraint firstAttribute="height" constant="54" id="v7W-EP-Seb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="4yh-Kd-Lp0">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <string key="text">To teach a lesson to your student, sit at a desk with your QWERTY keyboard connected to the iOS device in front of you. Make sure you have headphones on so that the words aren’t given away! The student should have the refreshable braille display in front of them, already connected with Bluetooth.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-iS-eJv">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <string key="text">Braille University is a tool for instructors like you to teach students Braille at any pace with the freedom of choosing your own curriculum. It requires a refreshable Braille display, headphones, and a Bluetooth QWERTY keyboard. Type any letters, words, or phrases and they will appear on the braille display for your student to read. These lessons can be saved and replayed for practice at home!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="leading" secondItem="ard-Zh-rWS" secondAttribute="leading" type="default" id="0HF-xK-cOm"/>
+                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="trailing" secondItem="Rj9-gj-MHj" secondAttribute="trailing" type="default" id="4gU-kY-2jB"/>
+                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" type="default" id="9Ly-So-fO4"/>
+                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="top" secondItem="Rj9-gj-MHj" secondAttribute="top" type="default" id="CSU-eE-CD6"/>
+                                            <constraint firstAttribute="height" constant="450" id="PAc-Gs-dof"/>
+                                            <constraint firstItem="ard-Zh-rWS" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" constant="-5" id="S8g-zO-8oG"/>
+                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="trailing" secondItem="Rj9-gj-MHj" secondAttribute="trailing" type="default" id="UTq-Ij-xEn"/>
+                                            <constraint firstItem="ard-Zh-rWS" firstAttribute="top" secondItem="pYS-UI-zU3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aVD-eM-BgH"/>
+                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="trailing" secondItem="ard-Zh-rWS" secondAttribute="trailing" type="default" id="hwc-b4-KXF"/>
+                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="top" secondItem="wpK-iS-eJv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="swo-DK-3Bs"/>
+                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="top" secondItem="ard-Zh-rWS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="x91-zk-CnW"/>
+                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" type="default" id="zUM-ae-ncD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-Cz-qSM" userLabel="ViewBottom">
+                                        <subviews>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="You can resume typing right away, and press enter to update the display." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Y7B-sL-O6o">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="zgB-ot-bb1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="When the lesson is over, swipe right to save or quit." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-SM-7et">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="uEx-ZO-bBj">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="L9I-UY-YAZ"/>
+                                                </constraints>
+                                                <string key="text">To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">Label - To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook.</string>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="This is the end of the user manual. You can now return to campus by tapping the back button in the top-left of the page." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-yI-IjR">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="cic-Ah-RLS"/>
+                                                    <constraint firstAttribute="width" constant="320" id="r55-2h-TEK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-sa-z8O">
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="62" id="Egt-RI-HNC"/>
+                                                </constraints>
+                                                <string key="text">Select “Teach a Lesson” from the main campus home screen. At this point, you are presented with a textbox that you can type into. Press enter for your letters, words, or phrases to appear on the refreshable braille display.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="0vq-8k-snc"/>
+                                            <constraint firstItem="aoC-sa-z8O" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="1Qe-UE-Rsj"/>
+                                            <constraint firstItem="cE5-SM-7et" firstAttribute="top" secondItem="Y7B-sL-O6o" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2AI-9H-poD"/>
+                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="6Xz-Rv-5Qs"/>
+                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="top" secondItem="cE5-SM-7et" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GEu-hE-VLe"/>
+                                            <constraint firstItem="cE5-SM-7et" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="HgC-al-xvi"/>
+                                            <constraint firstItem="aoC-sa-z8O" firstAttribute="top" secondItem="jX8-Cz-qSM" secondAttribute="top" constant="5" id="QDT-7s-tK9"/>
+                                            <constraint firstItem="cE5-SM-7et" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="Qle-mC-RVC"/>
+                                            <constraint firstAttribute="height" constant="256" id="WEk-RT-wvN"/>
+                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="WKO-tg-mJA"/>
+                                            <constraint firstItem="nQv-yI-IjR" firstAttribute="top" secondItem="uEx-ZO-bBj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xcm-fz-ZE1"/>
+                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="mkE-fW-Wrp"/>
+                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="trailing" secondItem="aoC-sa-z8O" secondAttribute="trailing" type="default" id="qAW-Sv-ucr"/>
+                                            <constraint firstItem="nQv-yI-IjR" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" constant="-7" id="vdQ-eV-ad9"/>
+                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="top" secondItem="jX8-Cz-qSM" secondAttribute="top" constant="68" id="yzI-33-3iG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="top" secondItem="CLw-i0-zlJ" secondAttribute="top" constant="515" id="J5J-Ps-MfX"/>
+                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="trailing" secondItem="CLw-i0-zlJ" secondAttribute="trailing" type="default" id="JS7-85-mSc"/>
+                                    <constraint firstAttribute="bottom" secondItem="jX8-Cz-qSM" secondAttribute="bottom" constant="29" id="XX6-CF-Ov4"/>
+                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="trailing" secondItem="CLw-i0-zlJ" secondAttribute="trailing" type="default" id="fYc-TQ-0ux"/>
+                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="leading" secondItem="CLw-i0-zlJ" secondAttribute="leading" type="default" id="ic6-bH-Vsc"/>
+                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="leading" secondItem="CLw-i0-zlJ" secondAttribute="leading" type="default" id="imf-sr-fvu"/>
+                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="top" secondItem="CLw-i0-zlJ" secondAttribute="top" constant="63" id="y8w-6L-PCe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="top" secondItem="E3y-fh-SX4" secondAttribute="top" constant="-20" id="Q2E-US-SuG"/>
+                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="leading" secondItem="E3y-fh-SX4" secondAttribute="leading" type="default" id="ZsV-A9-XbT"/>
+                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="trailing" secondItem="E3y-fh-SX4" secondAttribute="trailing" type="default" id="cCY-1S-KCy"/>
+                            <constraint firstAttribute="bottom" secondItem="CLw-i0-zlJ" secondAttribute="bottom" constant="-320" id="neI-Uy-e4t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help Desk" id="a12-7R-S6W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7N-oH-Emk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2120" y="235"/>
+        </scene>
+        <!--Library View Controller Subclass - Library-->
+        <scene sceneID="CPc-gT-R0W">
+            <objects>
+                <viewController id="6QS-9N-594" customClass="libraryViewControllerSubclass" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1c-W9-hEB">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-r6-a4o">
+                                <accessibility key="accessibilityConfiguration" hint="Access your recorded lessons"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OHy-dq-Etg"/>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="VSg-wA-QWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lecture Notes">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadLectureNotes" destination="6QS-9N-594" eventType="touchUpInside" id="Rgl-ln-blN"/>
+                                    <segue destination="4sg-GR-5iE" kind="push" identifier="lectureNotesSegue" id="Pgv-Kz-k84"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5B-is-BTE">
+                                <accessibility key="accessibilityConfiguration" hint="Access reference material"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="ZGZ-cc-Ywy"/>
+                                    <constraint firstAttribute="height" constant="100" id="jdX-eC-rIF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Textbook">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2wp-1D-bNw" kind="push" id="UQK-Hk-9pb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mPP-r6-a4o" firstAttribute="leading" secondItem="h1c-W9-hEB" secondAttribute="leading" type="default" id="8iB-jH-nC2"/>
+                            <constraint firstItem="v5B-is-BTE" firstAttribute="top" secondItem="h1c-W9-hEB" secondAttribute="top" constant="143" id="GdJ-Ff-u8O"/>
+                            <constraint firstItem="v5B-is-BTE" firstAttribute="leading" secondItem="h1c-W9-hEB" secondAttribute="leading" type="default" id="eje-TB-jrz"/>
+                            <constraint firstItem="mPP-r6-a4o" firstAttribute="top" secondItem="h1c-W9-hEB" secondAttribute="top" constant="43" id="gG6-nb-jaz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Library" id="11j-H7-SJd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ssd-Qt-xFV"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLd-9c-6tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1692" y="215"/>
+        </scene>
+        <!--Textbook View Controller-->
+        <scene sceneID="Uwj-OD-gYy">
+            <objects>
+                <viewController id="2wp-1D-bNw" customClass="textbookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xgW-ws-XGm">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERE-sj-PzH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1Se-uU-iEH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="easyButtonPressed" destination="2wp-1D-bNw" eventType="touchUpInside" id="vZY-7K-p1N"/>
+                                    <segue destination="4sg-GR-5iE" kind="push" identifier="easySegue" id="sV8-SJ-dd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-qZ-EMi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="ZY8-vG-c9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Intermediate">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="intermediateButtonPressed" destination="2wp-1D-bNw" eventType="touchUpInside" id="3lA-a1-qKh"/>
+                                    <segue destination="4sg-GR-5iE" kind="push" identifier="intermediateSegue" id="tQF-nS-UO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="top" secondItem="xgW-ws-XGm" secondAttribute="top" constant="142" id="1gf-43-vGQ"/>
+                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="leading" secondItem="xgW-ws-XGm" secondAttribute="leading" type="default" id="F0Y-GS-kV5"/>
+                            <constraint firstItem="ERE-sj-PzH" firstAttribute="top" secondItem="xgW-ws-XGm" secondAttribute="top" constant="42" id="VfB-cx-q1J"/>
+                            <constraint firstItem="ERE-sj-PzH" firstAttribute="trailing" secondItem="xgW-ws-XGm" secondAttribute="trailing" type="default" id="auJ-rN-ITB"/>
+                            <constraint firstItem="ERE-sj-PzH" firstAttribute="leading" secondItem="xgW-ws-XGm" secondAttribute="leading" type="default" id="cfL-ka-Xzo"/>
+                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="trailing" secondItem="xgW-ws-XGm" secondAttribute="trailing" type="default" id="hp0-Gg-2pv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KCW-Ff-Kt5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32w-Wx-0rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1248" y="951"/>
+        </scene>
+        <!--Table View Controller - Lecture Notes-->
+        <scene sceneID="zFG-P5-ctX">
+            <objects>
+                <tableViewController id="4sg-GR-5iE" customClass="tableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gnh-nd-VdG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pdj-Sv-s1b">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4sg-GR-5iE" id="tTE-gE-59i"/>
+                            <outlet property="delegate" destination="4sg-GR-5iE" id="yFE-8b-qVi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lecture Notes" id="olo-dw-0Wg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="eJM-wv-9Yk"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="X63-IN-n8K" kind="push" identifier="chooseSpecificLesson" id="8kW-ud-FX1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIP-kI-wIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="229"/>
+        </scene>
+        <!--View Controller - Textbook-->
+        <scene sceneID="6iC-Dl-EY3">
+            <objects>
+                <viewController id="OpB-iX-bpw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywH-9A-6Rn">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location of preloaded material for practice.  May or may not be included in this project." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="GO6-S7-hEw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Ktd-dA-vrH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GO6-S7-hEw" firstAttribute="leading" secondItem="ywH-9A-6Rn" secondAttribute="leading" type="default" id="NbA-pG-BGl"/>
+                            <constraint firstItem="GO6-S7-hEw" firstAttribute="top" secondItem="ywH-9A-6Rn" secondAttribute="top" constant="53" id="Xcc-b9-snU"/>
+                            <constraint firstItem="GO6-S7-hEw" firstAttribute="trailing" secondItem="ywH-9A-6Rn" secondAttribute="trailing" type="default" id="phu-mh-S9J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Textbook" id="ifg-dC-33H">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="O09-p8-aPd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boA-4f-zgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="789"/>
+        </scene>
+        <!--Lesson Controller-->
+        <scene sceneID="pZy-QQ-3TJ">
+            <objects>
+                <tableViewController id="X63-IN-n8K" customClass="lessonController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jVD-K2-dYk">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="H1q-QW-XCU">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="X63-IN-n8K" id="4Gx-da-BxX"/>
+                            <outlet property="delegate" destination="X63-IN-n8K" id="39V-c4-urn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" prompt="Use your braille display to practice the lesson.  Read from the display and advance to the next item using the next button.  " id="dvz-yV-vYo">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="CYf-gC-jDG"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpt-Xg-IbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-581" y="235"/>
+        </scene>
+        <!--View Controller - Lecture Notes-->
+        <scene sceneID="1Lj-wl-So7">
+            <objects>
+                <viewController id="ZZz-TV-2vc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqC-JF-rvM">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-i4-zuW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="DnC-ON-Q5O"/>
+                                    <constraint firstAttribute="height" constant="100" id="zSP-3o-bXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lesson 2">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZP9-DB-LgM" kind="push" id="rNI-QN-mfg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaC-tu-QWh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="4J2-IN-beD"/>
+                                    <constraint firstAttribute="height" constant="100" id="gvr-h1-ZYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lesson 1">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9qD-1j-ame" kind="push" id="1Zw-EO-at8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rua-i4-zuW" firstAttribute="leading" secondItem="fqC-JF-rvM" secondAttribute="leading" type="default" id="0CI-v3-5Wp"/>
+                            <constraint firstItem="OaC-tu-QWh" firstAttribute="leading" secondItem="fqC-JF-rvM" secondAttribute="leading" type="default" id="aSu-cs-sph"/>
+                            <constraint firstItem="Rua-i4-zuW" firstAttribute="top" secondItem="fqC-JF-rvM" secondAttribute="top" constant="44" id="fHt-fp-ihp"/>
+                            <constraint firstItem="OaC-tu-QWh" firstAttribute="top" secondItem="fqC-JF-rvM" secondAttribute="top" constant="142" id="tD4-Zr-IQP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lecture Notes" id="yTo-oi-ci6">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Chh-e6-sak"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCt-qK-eeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-445"/>
+        </scene>
+        <!--View Controller - Lesson 2-->
+        <scene sceneID="FXK-S1-48d">
+            <objects>
+                <viewController id="ZP9-DB-LgM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gB1-YR-mRa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="b65-Ux-ybW">
+                                <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="hbL-zf-qMR">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="uI1-lp-PBW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="World" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="1ky-Ue-nFx">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Zz6-SP-YAk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b65-Ux-ybW" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="0wS-iX-hrM"/>
+                            <constraint firstItem="hbL-zf-qMR" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="6BE-WT-vSS"/>
+                            <constraint firstItem="b65-Ux-ybW" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="RE9-qM-WSc"/>
+                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="top" secondItem="hbL-zf-qMR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vh1-wG-iqr"/>
+                            <constraint firstItem="hbL-zf-qMR" firstAttribute="top" secondItem="b65-Ux-ybW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WfY-lJ-pzm"/>
+                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="YnU-g6-NJC"/>
+                            <constraint firstItem="b65-Ux-ybW" firstAttribute="top" secondItem="gB1-YR-mRa" secondAttribute="top" constant="42" id="hsv-eR-NUl"/>
+                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="mO6-ny-e2C"/>
+                            <constraint firstItem="hbL-zf-qMR" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="sFT-vU-IAR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lesson 2" id="l94-Df-WUU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ijq-FV-cSK"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhw-h8-b4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-445"/>
+        </scene>
+        <!--View Controller - Lesson 1-->
+        <scene sceneID="QMD-h7-Y1n">
+            <objects>
+                <viewController id="9qD-1j-ame" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZjB-Ze-9Ek">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="NUJ-3r-jEL">
+                                <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A A A A A A " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="fZR-KK-u1d">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="H6w-5D-nfU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B B B B B B" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Euq-EF-0s3">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="LFZ-rz-0mq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fZR-KK-u1d" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="2Pc-pe-8K8"/>
+                            <constraint firstItem="fZR-KK-u1d" firstAttribute="top" secondItem="ZjB-Ze-9Ek" secondAttribute="top" constant="170" id="5mC-AV-AYF"/>
+                            <constraint firstItem="Euq-EF-0s3" firstAttribute="top" secondItem="fZR-KK-u1d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="B8R-2Y-ELO"/>
+                            <constraint firstItem="Euq-EF-0s3" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="Bnl-3b-ths"/>
+                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="HMc-zH-eqq"/>
+                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="YuT-Zl-0eT"/>
+                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="top" secondItem="ZjB-Ze-9Ek" secondAttribute="top" constant="39" id="qW5-wb-Qbv"/>
+                            <constraint firstItem="fZR-KK-u1d" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="vy2-Cb-jUZ"/>
+                            <constraint firstItem="Euq-EF-0s3" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="yhd-2g-ma2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lesson 1" id="RB0-pB-jqe">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vUD-6Q-sBM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLf-on-rYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="174"/>
+        </scene>
+        <!--End Lesson View Controller Subclass - End Lesson-->
+        <scene sceneID="Bvg-BD-oSp">
+            <objects>
+                <viewController id="Sf5-1K-mpk" customClass="EndLessonViewControllerSubclass" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rtv-fJ-5Tn">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-mV-6a1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1FC-Ld-OKq"/>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="nUt-0d-9l8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save and Name Lesson">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cor-E1-UNc" kind="push" identifier="saveSegue" id="mhd-6P-2SL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCU-S6-xaq">
+                                <accessibility key="accessibilityConfiguration" hint="Don't save the lesson and return to the home screen"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="BGZ-KX-LQd"/>
+                                    <constraint firstAttribute="height" constant="100" id="yEE-vN-uCG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done and Quit">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0nL-JL-Ldg" kind="modal" id="16x-Ud-cld"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EbR-mV-6a1" firstAttribute="leading" secondItem="rtv-fJ-5Tn" secondAttribute="leading" type="default" id="CyN-65-8jE"/>
+                            <constraint firstItem="CCU-S6-xaq" firstAttribute="leading" secondItem="rtv-fJ-5Tn" secondAttribute="leading" type="default" id="aAX-se-D9w"/>
+                            <constraint firstItem="EbR-mV-6a1" firstAttribute="top" secondItem="rtv-fJ-5Tn" secondAttribute="top" constant="44" id="eFB-kd-awX"/>
+                            <constraint firstItem="CCU-S6-xaq" firstAttribute="top" secondItem="rtv-fJ-5Tn" secondAttribute="top" constant="144" id="ehy-UD-hsc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="End Lesson" id="LGp-Bx-YL5">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2Zh-Xb-s2U"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGQ-jv-Dde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-392"/>
+        </scene>
+        <!--Save View Controller Subclass - Save and Name-->
+        <scene sceneID="pK3-tp-0Em">
+            <objects>
+                <viewController id="cor-E1-UNc" customClass="saveViewControllerSubclass" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x6c-BC-BKa">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Lesson" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-4k-y4h">
+                                <accessibility key="accessibilityConfiguration" hint="Enter the name of the lesson and press enter to save"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="typingDone:" destination="cor-E1-UNc" eventType="editingDidEndOnExit" id="9nG-X6-In3"/>
+                                    <outlet property="delegate" destination="cor-E1-UNc" id="35t-aN-kGO"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c0k-4k-y4h" firstAttribute="top" secondItem="x6c-BC-BKa" secondAttribute="top" constant="46" id="2Yq-ky-6qM"/>
+                            <constraint firstItem="c0k-4k-y4h" firstAttribute="trailing" secondItem="x6c-BC-BKa" secondAttribute="trailing" type="default" id="CPN-8d-i7w"/>
+                            <constraint firstItem="c0k-4k-y4h" firstAttribute="leading" secondItem="x6c-BC-BKa" secondAttribute="leading" type="default" id="vxL-ws-1Nk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Save and Name" id="m1a-hj-GoX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="tOf-cl-zcc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textFieldSaveLesson" destination="c0k-4k-y4h" id="YOb-v2-h1z"/>
+                        <segue destination="EdX-xr-3Su" kind="modal" identifier="restartAfterSaving" id="R7q-n2-Ffw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkk-wl-s5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="-384"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uzr-LO-a4Y">
+            <objects>
+                <viewController id="EdX-xr-3Su" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fq6-k9-2dq">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save Successful!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck8-8c-GGa">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="uIC-qP-Z73"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23z-xq-yU5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="402" id="vwc-jh-FDw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Return to Campus">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0nL-JL-Ldg" kind="modal" id="kor-RU-NeU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="23z-xq-yU5" firstAttribute="bottom" secondItem="Fq6-k9-2dq" secondAttribute="bottom" type="default" id="1g1-ko-ojI"/>
+                            <constraint firstItem="ck8-8c-GGa" firstAttribute="trailing" secondItem="Fq6-k9-2dq" secondAttribute="trailing" type="default" id="Dm5-Db-Rox"/>
+                            <constraint firstItem="23z-xq-yU5" firstAttribute="leading" secondItem="Fq6-k9-2dq" secondAttribute="leading" type="default" id="Eya-Jj-9yZ"/>
+                            <constraint firstItem="ck8-8c-GGa" firstAttribute="leading" secondItem="Fq6-k9-2dq" secondAttribute="leading" type="default" id="Ksc-Oa-2Z0"/>
+                            <constraint firstItem="23z-xq-yU5" firstAttribute="trailing" secondItem="Fq6-k9-2dq" secondAttribute="trailing" type="default" id="hCd-x4-6p3"/>
+                            <constraint firstItem="ck8-8c-GGa" firstAttribute="top" secondItem="Fq6-k9-2dq" secondAttribute="top" constant="-22" id="wbl-fn-pO3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y16-pY-HFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-376"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="EndLessonViewControllerSubclass" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EndLessonViewControllerSubclass.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SelectableUILable" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectableUILable.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enterText:"/>
+                <relationship kind="action" name="newLessonStarted:"/>
+            </relationships>
+        </class>
+        <class className="lessonController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/lessonController.h"/>
+        </class>
+        <class className="libraryViewControllerSubclass" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/libraryViewControllerSubclass.h"/>
+            <relationships>
+                <relationship kind="action" name="loadLectureNotes"/>
+            </relationships>
+        </class>
+        <class className="saveViewControllerSubclass" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/saveViewControllerSubclass.h"/>
+            <relationships>
+                <relationship kind="action" name="saveThisLesson"/>
+                <relationship kind="action" name="typingDone:"/>
+                <relationship kind="outlet" name="textFieldSaveLesson" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="tableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/tableViewController.h"/>
+        </class>
+        <class className="teachALessonViewControllerSubclass" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/teachALessonViewControllerSubclass.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lessonEntryField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="lessonFeedbackLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teachIntroLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="textbookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/textbookViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="easyButtonPressed"/>
+                <relationship kind="action" name="intermediateButtonPressed"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="kor-RU-NeU"/>
+        <segue reference="tQF-nS-UO7"/>
+    </inferredMetricsTieBreakers>
+</document>
