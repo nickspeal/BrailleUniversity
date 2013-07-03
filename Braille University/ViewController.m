@@ -31,11 +31,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // Detects tap outside of first responder: send "dismissKeyboard"
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-                                   initWithTarget:self
-                                   action:@selector(dismissKeyboard)];
     
-    [self.view addGestureRecognizer:tap];
+    // These lines are commented out June 2 by Nick becuase the program wouldn't run on the ios 5.1 simulator otherwise
+    
+    
+    //UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+    //                               initWithTarget:self
+    //                               action:@selector(dismissKeyboard)];
+    
+    //[self.view addGestureRecognizer:tap];
     
 }
 

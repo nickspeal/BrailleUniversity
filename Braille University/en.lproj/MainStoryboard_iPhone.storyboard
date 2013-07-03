@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0nL-JL-Ldg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0nL-JL-Ldg">
     <dependencies>
+        <deployment version="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
@@ -30,12 +31,9 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oX-VN-GSQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7oX-VN-GSQ">
+                                <rect key="frame" x="0.0" y="44" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Start teaching a lesson and have it recorded for playback later" label="Teach a Lesson"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="7jo-br-5Wm"/>
-                                    <constraint firstAttribute="height" constant="100" id="Vbx-z5-CB2"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Teach a Lesson">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,12 +47,9 @@
                                     <segue destination="2" kind="push" identifier="newLessonSegue" id="YYR-MD-Dto"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJw-YE-ceX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OJw-YE-ceX">
+                                <rect key="frame" x="0.0" y="144" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Play back a previously recorded lesson"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="1gD-o8-r2z"/>
-                                    <constraint firstAttribute="height" constant="100" id="Bek-0n-Y1t"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Go to the Library">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,12 +62,9 @@
                                     <segue destination="6QS-9N-594" kind="push" id="w8n-im-Vlu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-T2-nib">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z2L-T2-nib">
+                                <rect key="frame" x="0.0" y="244" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Provides helpful information about the application and directions for using it"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="VFX-7S-vin"/>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="dKu-48-gmU"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Help Desk">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,14 +79,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="z2L-T2-nib" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="244" id="4VE-bf-02P"/>
-                            <constraint firstItem="z2L-T2-nib" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="BhU-Hj-E33"/>
-                            <constraint firstItem="OJw-YE-ceX" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="144" id="EKY-Ns-DA5"/>
-                            <constraint firstItem="OJw-YE-ceX" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="ILA-hR-OrI"/>
-                            <constraint firstItem="7oX-VN-GSQ" firstAttribute="top" secondItem="zwa-8l-OA8" secondAttribute="top" constant="44" id="UQF-Ag-8YO"/>
-                            <constraint firstItem="7oX-VN-GSQ" firstAttribute="leading" secondItem="zwa-8l-OA8" secondAttribute="leading" type="default" id="aJV-Dq-Dwc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome to Campus" id="oZh-qh-64E">
                         <barButtonItem key="backBarButtonItem" title="Back" id="LP0-xP-1Jm"/>
@@ -112,12 +96,9 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="583-OX-38m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="583-OX-38m">
+                                <rect key="frame" x="0.0" y="86" width="320" height="375"/>
                                 <accessibility key="accessibilityConfiguration" hint="You'll get to save or quit on the next page"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="S2X-Xt-7UE"/>
-                                    <constraint firstAttribute="height" constant="374" id="zr9-4K-Zu9"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="End Lesson">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,7 +111,8 @@
                                     <segue destination="Sf5-1K-mpk" kind="push" identifier="endSegue" id="PNk-5z-73m"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Begin Typing Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oO-Lq-ThK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Begin Typing Here" textAlignment="center" minimumFontSize="17" id="1oO-Lq-ThK">
+                                <rect key="frame" x="0.0" y="46" width="320" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="To record a lesson, begin typing what you want to appear on the braille output display"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go"/>
@@ -138,27 +120,15 @@
                                     <outlet property="delegate" destination="2" id="TwV-nU-Kdm"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ACn-l7-v6n" customClass="SelectableUILable">
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" id="ACn-l7-v6n" customClass="SelectableUILable">
+                                <rect key="frame" x="0.0" y="76" width="320" height="97"/>
                                 <color key="backgroundColor" red="0.9228515625" green="0.9228515625" blue="0.9228515625" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="lK5-T8-piM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="07d-Ka-iLp"/>
-                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="46" id="9ES-9B-YfW"/>
-                            <constraint firstItem="ACn-l7-v6n" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="G6A-fo-j0u"/>
-                            <constraint firstItem="583-OX-38m" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Kbj-y0-qKK"/>
-                            <constraint firstItem="ACn-l7-v6n" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="NJK-Oy-JAR"/>
-                            <constraint firstItem="583-OX-38m" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="URL-uZ-9BK"/>
-                            <constraint firstItem="ACn-l7-v6n" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="bBQ-tw-peo"/>
-                            <constraint firstItem="1oO-Lq-ThK" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="yJQ-50-4He"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Teach a Lesson" id="koe-oV-OQG">
                         <barButtonItem key="backBarButtonItem" title="Back" id="X3Q-hN-8IB"/>
@@ -180,38 +150,37 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLw-i0-zlJ">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CLw-i0-zlJ">
+                                <rect key="frame" x="0.0" y="-20" width="320" height="800"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-gj-MHj" userLabel="ViewTop">
+                                    <view contentMode="scaleToFill" id="Rj9-gj-MHj" userLabel="ViewTop">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="450"/>
                                         <subviews>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="pYS-UI-zU3">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="pYS-UI-zU3">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="Qo2-IK-vw5"/>
-                                                </constraints>
                                                 <string key="text">Welcome to the Help Desk. Swipe right to hear the next item. The back button is in the top-left of the page to return to campus.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="Teach your students to read Braille on a refreshable braille display with this completely accessible app." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ard-Zh-rWS">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="Teach your students to read Braille on a refreshable braille display with this completely accessible app." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="ard-Zh-rWS">
+                                                <rect key="frame" x="-5" y="68" width="320" height="54"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="320" id="g4b-3K-YP0"/>
-                                                    <constraint firstAttribute="height" constant="54" id="v7W-EP-Seb"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="4yh-Kd-Lp0">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="4yh-Kd-Lp0">
+                                                <rect key="frame" x="0.0" y="309" width="320" height="133"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 <string key="text">To teach a lesson to your student, sit at a desk with your QWERTY keyboard connected to the iOS device in front of you. Make sure you have headphones on so that the words aren’t given away! The student should have the refreshable braille display in front of them, already connected with Bluetooth.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-iS-eJv">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="wpK-iS-eJv">
+                                                <rect key="frame" x="-5" y="130" width="320" height="171"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 <string key="text">Braille University is a tool for instructors like you to teach students Braille at any pace with the freedom of choosing your own curriculum. It requires a refreshable Braille display, headphones, and a Bluetooth QWERTY keyboard. Type any letters, words, or phrases and they will appear on the braille display for your student to read. These lessons can be saved and replayed for practice at home!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -220,64 +189,43 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="leading" secondItem="ard-Zh-rWS" secondAttribute="leading" type="default" id="0HF-xK-cOm"/>
-                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="trailing" secondItem="Rj9-gj-MHj" secondAttribute="trailing" type="default" id="4gU-kY-2jB"/>
-                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" type="default" id="9Ly-So-fO4"/>
-                                            <constraint firstItem="pYS-UI-zU3" firstAttribute="top" secondItem="Rj9-gj-MHj" secondAttribute="top" type="default" id="CSU-eE-CD6"/>
-                                            <constraint firstAttribute="height" constant="450" id="PAc-Gs-dof"/>
-                                            <constraint firstItem="ard-Zh-rWS" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" constant="-5" id="S8g-zO-8oG"/>
-                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="trailing" secondItem="Rj9-gj-MHj" secondAttribute="trailing" type="default" id="UTq-Ij-xEn"/>
-                                            <constraint firstItem="ard-Zh-rWS" firstAttribute="top" secondItem="pYS-UI-zU3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aVD-eM-BgH"/>
-                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="trailing" secondItem="ard-Zh-rWS" secondAttribute="trailing" type="default" id="hwc-b4-KXF"/>
-                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="top" secondItem="wpK-iS-eJv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="swo-DK-3Bs"/>
-                                            <constraint firstItem="wpK-iS-eJv" firstAttribute="top" secondItem="ard-Zh-rWS" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="x91-zk-CnW"/>
-                                            <constraint firstItem="4yh-Kd-Lp0" firstAttribute="leading" secondItem="Rj9-gj-MHj" secondAttribute="leading" type="default" id="zUM-ae-ncD"/>
-                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-Cz-qSM" userLabel="ViewBottom">
+                                    <view contentMode="scaleToFill" id="jX8-Cz-qSM" userLabel="ViewBottom">
+                                        <rect key="frame" x="0.0" y="515" width="320" height="256"/>
                                         <subviews>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="You can resume typing right away, and press enter to update the display." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Y7B-sL-O6o">
-                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="zgB-ot-bb1"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="When the lesson is over, swipe right to save or quit." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-SM-7et">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="You can resume typing right away, and press enter to update the display." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="Y7B-sL-O6o">
+                                                <rect key="frame" x="0.0" y="68" width="320" height="42"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="uEx-ZO-bBj">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="When the lesson is over, swipe right to save or quit." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="cE5-SM-7et">
+                                                <rect key="frame" x="0.0" y="118" width="320" height="38"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="42" id="L9I-UY-YAZ"/>
-                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="uEx-ZO-bBj">
+                                                <rect key="frame" x="0.0" y="164" width="320" height="42"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 <string key="text">To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <string key="userLabel">Label - To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook.</string>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="This is the end of the user manual. You can now return to campus by tapping the back button in the top-left of the page." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="nQv-yI-IjR">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" text="This is the end of the user manual. You can now return to campus by tapping the back button in the top-left of the page." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="nQv-yI-IjR">
+                                                <rect key="frame" x="-7" y="214" width="320" height="35"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="cic-Ah-RLS"/>
-                                                    <constraint firstAttribute="width" constant="320" id="r55-2h-TEK"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-sa-z8O">
+                                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="760" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="aoC-sa-z8O">
+                                                <rect key="frame" x="0.0" y="5" width="320" height="62"/>
                                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="62" id="Egt-RI-HNC"/>
-                                                </constraints>
                                                 <string key="text">Select “Teach a Lesson” from the main campus home screen. At this point, you are presented with a textbox that you can type into. Press enter for your letters, words, or phrases to appear on the refreshable braille display.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -285,44 +233,12 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="0vq-8k-snc"/>
-                                            <constraint firstItem="aoC-sa-z8O" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="1Qe-UE-Rsj"/>
-                                            <constraint firstItem="cE5-SM-7et" firstAttribute="top" secondItem="Y7B-sL-O6o" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2AI-9H-poD"/>
-                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="6Xz-Rv-5Qs"/>
-                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="top" secondItem="cE5-SM-7et" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GEu-hE-VLe"/>
-                                            <constraint firstItem="cE5-SM-7et" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" type="default" id="HgC-al-xvi"/>
-                                            <constraint firstItem="aoC-sa-z8O" firstAttribute="top" secondItem="jX8-Cz-qSM" secondAttribute="top" constant="5" id="QDT-7s-tK9"/>
-                                            <constraint firstItem="cE5-SM-7et" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="Qle-mC-RVC"/>
-                                            <constraint firstAttribute="height" constant="256" id="WEk-RT-wvN"/>
-                                            <constraint firstItem="uEx-ZO-bBj" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="WKO-tg-mJA"/>
-                                            <constraint firstItem="nQv-yI-IjR" firstAttribute="top" secondItem="uEx-ZO-bBj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xcm-fz-ZE1"/>
-                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="trailing" secondItem="jX8-Cz-qSM" secondAttribute="trailing" type="default" id="mkE-fW-Wrp"/>
-                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="trailing" secondItem="aoC-sa-z8O" secondAttribute="trailing" type="default" id="qAW-Sv-ucr"/>
-                                            <constraint firstItem="nQv-yI-IjR" firstAttribute="leading" secondItem="jX8-Cz-qSM" secondAttribute="leading" constant="-7" id="vdQ-eV-ad9"/>
-                                            <constraint firstItem="Y7B-sL-O6o" firstAttribute="top" secondItem="jX8-Cz-qSM" secondAttribute="top" constant="68" id="yzI-33-3iG"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <constraints>
-                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="top" secondItem="CLw-i0-zlJ" secondAttribute="top" constant="515" id="J5J-Ps-MfX"/>
-                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="trailing" secondItem="CLw-i0-zlJ" secondAttribute="trailing" type="default" id="JS7-85-mSc"/>
-                                    <constraint firstAttribute="bottom" secondItem="jX8-Cz-qSM" secondAttribute="bottom" constant="29" id="XX6-CF-Ov4"/>
-                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="trailing" secondItem="CLw-i0-zlJ" secondAttribute="trailing" type="default" id="fYc-TQ-0ux"/>
-                                    <constraint firstItem="jX8-Cz-qSM" firstAttribute="leading" secondItem="CLw-i0-zlJ" secondAttribute="leading" type="default" id="ic6-bH-Vsc"/>
-                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="leading" secondItem="CLw-i0-zlJ" secondAttribute="leading" type="default" id="imf-sr-fvu"/>
-                                    <constraint firstItem="Rj9-gj-MHj" firstAttribute="top" secondItem="CLw-i0-zlJ" secondAttribute="top" constant="63" id="y8w-6L-PCe"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="top" secondItem="E3y-fh-SX4" secondAttribute="top" constant="-20" id="Q2E-US-SuG"/>
-                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="leading" secondItem="E3y-fh-SX4" secondAttribute="leading" type="default" id="ZsV-A9-XbT"/>
-                            <constraint firstItem="CLw-i0-zlJ" firstAttribute="trailing" secondItem="E3y-fh-SX4" secondAttribute="trailing" type="default" id="cCY-1S-KCy"/>
-                            <constraint firstAttribute="bottom" secondItem="CLw-i0-zlJ" secondAttribute="bottom" constant="-320" id="neI-Uy-e4t"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Help Desk" id="a12-7R-S6W"/>
                 </viewController>
@@ -338,12 +254,9 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-r6-a4o">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mPP-r6-a4o">
+                                <rect key="frame" x="0.0" y="43" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Access your recorded lessons"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="OHy-dq-Etg"/>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="VSg-wA-QWM"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Lecture Notes">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -357,12 +270,9 @@
                                     <segue destination="4sg-GR-5iE" kind="push" identifier="lectureNotesSegue" id="Pgv-Kz-k84"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5B-is-BTE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v5B-is-BTE">
+                                <rect key="frame" x="0.0" y="143" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Access reference material"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="ZGZ-cc-Ywy"/>
-                                    <constraint firstAttribute="height" constant="100" id="jdX-eC-rIF"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Textbook">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -377,12 +287,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mPP-r6-a4o" firstAttribute="leading" secondItem="h1c-W9-hEB" secondAttribute="leading" type="default" id="8iB-jH-nC2"/>
-                            <constraint firstItem="v5B-is-BTE" firstAttribute="top" secondItem="h1c-W9-hEB" secondAttribute="top" constant="143" id="GdJ-Ff-u8O"/>
-                            <constraint firstItem="v5B-is-BTE" firstAttribute="leading" secondItem="h1c-W9-hEB" secondAttribute="leading" type="default" id="eje-TB-jrz"/>
-                            <constraint firstItem="mPP-r6-a4o" firstAttribute="top" secondItem="h1c-W9-hEB" secondAttribute="top" constant="43" id="gG6-nb-jaz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Library" id="11j-H7-SJd">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ssd-Qt-xFV"/>
@@ -400,10 +304,8 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERE-sj-PzH">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1Se-uU-iEH"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ERE-sj-PzH">
+                                <rect key="frame" x="0.0" y="42" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Easy">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -417,10 +319,8 @@
                                     <segue destination="4sg-GR-5iE" kind="push" identifier="easySegue" id="sV8-SJ-dd0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy8-qZ-EMi">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="ZY8-vG-c9m"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fy8-qZ-EMi">
+                                <rect key="frame" x="0.0" y="142" width="320" height="112"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Intermediate">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -436,14 +336,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="top" secondItem="xgW-ws-XGm" secondAttribute="top" constant="142" id="1gf-43-vGQ"/>
-                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="leading" secondItem="xgW-ws-XGm" secondAttribute="leading" type="default" id="F0Y-GS-kV5"/>
-                            <constraint firstItem="ERE-sj-PzH" firstAttribute="top" secondItem="xgW-ws-XGm" secondAttribute="top" constant="42" id="VfB-cx-q1J"/>
-                            <constraint firstItem="ERE-sj-PzH" firstAttribute="trailing" secondItem="xgW-ws-XGm" secondAttribute="trailing" type="default" id="auJ-rN-ITB"/>
-                            <constraint firstItem="ERE-sj-PzH" firstAttribute="leading" secondItem="xgW-ws-XGm" secondAttribute="leading" type="default" id="cfL-ka-Xzo"/>
-                            <constraint firstItem="Fy8-qZ-EMi" firstAttribute="trailing" secondItem="xgW-ws-XGm" secondAttribute="trailing" type="default" id="hp0-Gg-2pv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KCW-Ff-Kt5"/>
                 </viewController>
@@ -494,21 +386,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location of preloaded material for practice.  May or may not be included in this project." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="GO6-S7-hEw">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="Ktd-dA-vrH"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location of preloaded material for practice.  May or may not be included in this project." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GO6-S7-hEw">
+                                <rect key="frame" x="0.0" y="53" width="320" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="GO6-S7-hEw" firstAttribute="leading" secondItem="ywH-9A-6Rn" secondAttribute="leading" type="default" id="NbA-pG-BGl"/>
-                            <constraint firstItem="GO6-S7-hEw" firstAttribute="top" secondItem="ywH-9A-6Rn" secondAttribute="top" constant="53" id="Xcc-b9-snU"/>
-                            <constraint firstItem="GO6-S7-hEw" firstAttribute="trailing" secondItem="ywH-9A-6Rn" secondAttribute="trailing" type="default" id="phu-mh-S9J"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Textbook" id="ifg-dC-33H">
                         <barButtonItem key="backBarButtonItem" title="Back" id="O09-p8-aPd"/>
@@ -558,11 +443,8 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rua-i4-zuW">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="DnC-ON-Q5O"/>
-                                    <constraint firstAttribute="height" constant="100" id="zSP-3o-bXU"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rua-i4-zuW">
+                                <rect key="frame" x="0.0" y="44" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Lesson 2">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -575,11 +457,8 @@
                                     <segue destination="ZP9-DB-LgM" kind="push" id="rNI-QN-mfg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaC-tu-QWh">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="4J2-IN-beD"/>
-                                    <constraint firstAttribute="height" constant="100" id="gvr-h1-ZYb"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OaC-tu-QWh">
+                                <rect key="frame" x="0.0" y="142" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Lesson 1">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -594,12 +473,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Rua-i4-zuW" firstAttribute="leading" secondItem="fqC-JF-rvM" secondAttribute="leading" type="default" id="0CI-v3-5Wp"/>
-                            <constraint firstItem="OaC-tu-QWh" firstAttribute="leading" secondItem="fqC-JF-rvM" secondAttribute="leading" type="default" id="aSu-cs-sph"/>
-                            <constraint firstItem="Rua-i4-zuW" firstAttribute="top" secondItem="fqC-JF-rvM" secondAttribute="top" constant="44" id="fHt-fp-ihp"/>
-                            <constraint firstItem="OaC-tu-QWh" firstAttribute="top" secondItem="fqC-JF-rvM" secondAttribute="top" constant="142" id="tD4-Zr-IQP"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lecture Notes" id="yTo-oi-ci6">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Chh-e6-sak"/>
@@ -617,43 +490,29 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="b65-Ux-ybW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b65-Ux-ybW">
+                                <rect key="frame" x="0.0" y="42" width="320" height="84"/>
                                 <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="hbL-zf-qMR">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbL-zf-qMR">
+                                <rect key="frame" x="0.0" y="134" width="320" height="84"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="uI1-lp-PBW"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="World" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="1ky-Ue-nFx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="World" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ky-Ue-nFx">
+                                <rect key="frame" x="0.0" y="226" width="320" height="84"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="Zz6-SP-YAk"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="b65-Ux-ybW" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="0wS-iX-hrM"/>
-                            <constraint firstItem="hbL-zf-qMR" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="6BE-WT-vSS"/>
-                            <constraint firstItem="b65-Ux-ybW" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="RE9-qM-WSc"/>
-                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="top" secondItem="hbL-zf-qMR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vh1-wG-iqr"/>
-                            <constraint firstItem="hbL-zf-qMR" firstAttribute="top" secondItem="b65-Ux-ybW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WfY-lJ-pzm"/>
-                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="YnU-g6-NJC"/>
-                            <constraint firstItem="b65-Ux-ybW" firstAttribute="top" secondItem="gB1-YR-mRa" secondAttribute="top" constant="42" id="hsv-eR-NUl"/>
-                            <constraint firstItem="1ky-Ue-nFx" firstAttribute="trailing" secondItem="gB1-YR-mRa" secondAttribute="trailing" type="default" id="mO6-ny-e2C"/>
-                            <constraint firstItem="hbL-zf-qMR" firstAttribute="leading" secondItem="gB1-YR-mRa" secondAttribute="leading" type="default" id="sFT-vU-IAR"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lesson 2" id="l94-Df-WUU">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ijq-FV-cSK"/>
@@ -671,43 +530,29 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="NUJ-3r-jEL">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUJ-3r-jEL">
+                                <rect key="frame" x="0.0" y="39" width="320" height="84"/>
                                 <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A A A A A A " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="fZR-KK-u1d">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A A A A A A " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fZR-KK-u1d">
+                                <rect key="frame" x="0.0" y="170" width="320" height="84"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="H6w-5D-nfU"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B B B B B B" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="Euq-EF-0s3">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B B B B B B" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Euq-EF-0s3">
+                                <rect key="frame" x="0.0" y="262" width="320" height="84"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="84" id="LFZ-rz-0mq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="fZR-KK-u1d" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="2Pc-pe-8K8"/>
-                            <constraint firstItem="fZR-KK-u1d" firstAttribute="top" secondItem="ZjB-Ze-9Ek" secondAttribute="top" constant="170" id="5mC-AV-AYF"/>
-                            <constraint firstItem="Euq-EF-0s3" firstAttribute="top" secondItem="fZR-KK-u1d" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="B8R-2Y-ELO"/>
-                            <constraint firstItem="Euq-EF-0s3" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="Bnl-3b-ths"/>
-                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="HMc-zH-eqq"/>
-                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="YuT-Zl-0eT"/>
-                            <constraint firstItem="NUJ-3r-jEL" firstAttribute="top" secondItem="ZjB-Ze-9Ek" secondAttribute="top" constant="39" id="qW5-wb-Qbv"/>
-                            <constraint firstItem="fZR-KK-u1d" firstAttribute="trailing" secondItem="ZjB-Ze-9Ek" secondAttribute="trailing" type="default" id="vy2-Cb-jUZ"/>
-                            <constraint firstItem="Euq-EF-0s3" firstAttribute="leading" secondItem="ZjB-Ze-9Ek" secondAttribute="leading" type="default" id="yhd-2g-ma2"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lesson 1" id="RB0-pB-jqe">
                         <barButtonItem key="backBarButtonItem" title="Back" id="vUD-6Q-sBM"/>
@@ -725,11 +570,8 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbR-mV-6a1">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1FC-Ld-OKq"/>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="nUt-0d-9l8"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EbR-mV-6a1">
+                                <rect key="frame" x="0.0" y="44" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save and Name Lesson">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -742,12 +584,9 @@
                                     <segue destination="cor-E1-UNc" kind="push" identifier="saveSegue" id="mhd-6P-2SL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCU-S6-xaq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CCU-S6-xaq">
+                                <rect key="frame" x="0.0" y="144" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Don't save the lesson and return to the home screen"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" type="user" id="BGZ-KX-LQd"/>
-                                    <constraint firstAttribute="height" constant="100" id="yEE-vN-uCG"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done and Quit">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -762,12 +601,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EbR-mV-6a1" firstAttribute="leading" secondItem="rtv-fJ-5Tn" secondAttribute="leading" type="default" id="CyN-65-8jE"/>
-                            <constraint firstItem="CCU-S6-xaq" firstAttribute="leading" secondItem="rtv-fJ-5Tn" secondAttribute="leading" type="default" id="aAX-se-D9w"/>
-                            <constraint firstItem="EbR-mV-6a1" firstAttribute="top" secondItem="rtv-fJ-5Tn" secondAttribute="top" constant="44" id="eFB-kd-awX"/>
-                            <constraint firstItem="CCU-S6-xaq" firstAttribute="top" secondItem="rtv-fJ-5Tn" secondAttribute="top" constant="144" id="ehy-UD-hsc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="End Lesson" id="LGp-Bx-YL5">
                         <barButtonItem key="backBarButtonItem" title="Back" id="2Zh-Xb-s2U"/>
@@ -785,7 +618,8 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Lesson" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-4k-y4h">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Lesson" textAlignment="center" minimumFontSize="17" id="c0k-4k-y4h">
+                                <rect key="frame" x="0.0" y="46" width="320" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Enter the name of the lesson and press enter to save"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -796,11 +630,6 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="c0k-4k-y4h" firstAttribute="top" secondItem="x6c-BC-BKa" secondAttribute="top" constant="46" id="2Yq-ky-6qM"/>
-                            <constraint firstItem="c0k-4k-y4h" firstAttribute="trailing" secondItem="x6c-BC-BKa" secondAttribute="trailing" type="default" id="CPN-8d-i7w"/>
-                            <constraint firstItem="c0k-4k-y4h" firstAttribute="leading" secondItem="x6c-BC-BKa" secondAttribute="leading" type="default" id="vxL-ws-1Nk"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Save and Name" id="m1a-hj-GoX">
                         <barButtonItem key="backBarButtonItem" title="Back" id="tOf-cl-zcc"/>
@@ -822,18 +651,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save Successful!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck8-8c-GGa">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="uIC-qP-Z73"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Save Successful!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ck8-8c-GGa">
+                                <rect key="frame" x="0.0" y="-22" width="320" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23z-xq-yU5">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="402" id="vwc-jh-FDw"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23z-xq-yU5">
+                                <rect key="frame" x="0.0" y="58" width="320" height="403"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Return to Campus">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -848,14 +673,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="23z-xq-yU5" firstAttribute="bottom" secondItem="Fq6-k9-2dq" secondAttribute="bottom" type="default" id="1g1-ko-ojI"/>
-                            <constraint firstItem="ck8-8c-GGa" firstAttribute="trailing" secondItem="Fq6-k9-2dq" secondAttribute="trailing" type="default" id="Dm5-Db-Rox"/>
-                            <constraint firstItem="23z-xq-yU5" firstAttribute="leading" secondItem="Fq6-k9-2dq" secondAttribute="leading" type="default" id="Eya-Jj-9yZ"/>
-                            <constraint firstItem="ck8-8c-GGa" firstAttribute="leading" secondItem="Fq6-k9-2dq" secondAttribute="leading" type="default" id="Ksc-Oa-2Z0"/>
-                            <constraint firstItem="23z-xq-yU5" firstAttribute="trailing" secondItem="Fq6-k9-2dq" secondAttribute="trailing" type="default" id="hCd-x4-6p3"/>
-                            <constraint firstItem="ck8-8c-GGa" firstAttribute="top" secondItem="Fq6-k9-2dq" secondAttribute="top" constant="-22" id="wbl-fn-pO3"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y16-pY-HFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -863,59 +680,6 @@
             <point key="canvasLocation" x="60" y="-376"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="EndLessonViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EndLessonViewControllerSubclass.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SelectableUILable" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectableUILable.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="enterText:"/>
-                <relationship kind="action" name="newLessonStarted:"/>
-            </relationships>
-        </class>
-        <class className="lessonController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/lessonController.h"/>
-        </class>
-        <class className="libraryViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/libraryViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="action" name="loadLectureNotes"/>
-            </relationships>
-        </class>
-        <class className="saveViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/saveViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="action" name="saveThisLesson"/>
-                <relationship kind="action" name="typingDone:"/>
-                <relationship kind="outlet" name="textFieldSaveLesson" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tableViewController.h"/>
-        </class>
-        <class className="teachALessonViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/teachALessonViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lessonEntryField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lessonFeedbackLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="teachIntroLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="textbookViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/textbookViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="easyButtonPressed"/>
-                <relationship kind="action" name="intermediateButtonPressed"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
