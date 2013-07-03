@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 //@property (weak, nonatomic) IBOutlet UITextField *textField; 
-- (IBAction)enterText:(id)sender;
+//- (IBAction)enterText:(id)sender;
 //@property (copy,nonatomic) NSString *words;
 @property (nonatomic, retain) NSMutableArray *currentLesson; //nonatomic means not for multithreading; retain means dont delete the variable after it is copied to this array
 
