@@ -24,6 +24,12 @@
     return self;
 }
 
+- (id)initWithAccessibilityContainer:(id)container
+{
+    
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,6 +41,8 @@
     //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.lessonFeedbackLabel);
 
     [self.lessonEntryField becomeFirstResponder];
+    
+    
     
     //   ####   add observers   ####
     
@@ -63,7 +71,7 @@
 - (void)keypressDetectedFromLabel:(NSNotification *)localNotification
 {
     NSLog([localNotification name]);
-    //[self.lessonEntryField becomeFirstResponder];
+    [self.lessonEntryField becomeFirstResponder];
 }
 
 - (void)didReceiveGenericNotification:(NSNotification *)localNotification
@@ -121,7 +129,7 @@
     //UIAccessibilityZoomFocusChanged(UIAccessibilityZoomTypeInsertionPoint,self.lessonFeedbackLabel.frame,self.lessonFeedbackLabel); //this reads out loud the label, without changeing the firstResponder, so the textbox is always listening for the keyboard.
     
     
-    [self.lessonFeedbackLabel setText:localLessonEntryField.text];   //display the contents of the textbox in the label    
+    //[self.lessonFeedbackLabel setText:localLessonEntryField.text];   //display the contents of the textbox in the label
     
     [localLessonEntryField setText:@""];    //wipe the contents of the textbox
 

@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="583-OX-38m">
-                                <rect key="frame" x="0.0" y="103" width="320" height="358"/>
+                                <rect key="frame" x="0.0" y="78" width="320" height="383"/>
                                 <accessibility key="accessibilityConfiguration" hint="You'll get to save or quit on the next page"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="End Lesson">
@@ -111,7 +111,7 @@
                                     <segue destination="Sf5-1K-mpk" kind="push" identifier="endSegue" id="PNk-5z-73m"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1oO-Lq-ThK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1oO-Lq-ThK" customClass="customUITextField">
                                 <rect key="frame" x="0.0" y="46" width="320" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="To record a lesson, begin typing what you want to appear on the braille output display">
                                     <bool key="isElement" value="YES"/>
@@ -122,16 +122,6 @@
                                     <outlet property="delegate" destination="2" id="TwV-nU-Kdm"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" highlighted="YES" id="ACn-l7-v6n" customClass="SelectableUILable">
-                                <rect key="frame" x="0.0" y="75" width="320" height="97"/>
-                                <color key="backgroundColor" red="0.9228515625" green="0.9228515625" blue="0.9228515625" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -140,7 +130,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lessonEntryField" destination="1oO-Lq-ThK" id="gZe-Gg-iUj"/>
-                        <outlet property="lessonFeedbackLabel" destination="ACn-l7-v6n" id="sWc-rC-CsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" userLabel="test" sceneMemberID="firstResponder"/>
@@ -690,14 +679,14 @@
         <class className="EndLessonViewControllerSubclass" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EndLessonViewControllerSubclass.h"/>
         </class>
-        <class className="SelectableUILable" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectableUILable.h"/>
-        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="newLessonStarted:"/>
             </relationships>
+        </class>
+        <class className="customUITextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/customUITextField.h"/>
         </class>
         <class className="lessonController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/lessonController.h"/>
