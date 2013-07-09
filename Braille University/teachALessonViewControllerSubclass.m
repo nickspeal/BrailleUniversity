@@ -70,6 +70,7 @@
 
 - (void)keypressDetectedFromLabel:(NSNotification *)localNotification
 {
+    //facilitates typing from anywhere
     NSLog([localNotification name]);
     [self.lessonEntryField becomeFirstResponder];
 }
@@ -103,11 +104,13 @@
     */
     
     NSLog(@"textFieldShouldReturn Entered");
-       
+    
+    
+    //Empty String Handler
+    
     if ([localLessonEntryField.text isEqual: @""]) {
-        //make keyboard go away if empty string entered
-        NSLog(@"Empty String Entered");
-        [self.lessonEntryField resignFirstResponder];
+
+        [self.lessonEntryField resignFirstResponder];  //Hides keyboard; this was only needed in the past when the done and quit button was hidden
         return YES;
     }
     
