@@ -113,7 +113,8 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1oO-Lq-ThK" customClass="customUITextField">
                                 <rect key="frame" x="0.0" y="46" width="320" height="30"/>
-                                <accessibility key="accessibilityConfiguration" hint="To record a lesson, begin typing what you want to appear on the braille output display. Press enter to type the next word.">
+                                <accessibility key="accessibilityConfiguration">
+                                    <string key="hint">To record a lesson, begin typing what you want to appear on the braille output display. Press enter to move on to the next word.</string>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
