@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *teachIntroLabel;
 @property (weak, nonatomic) IBOutlet UIButton *labelButton;
 @property (nonatomic, retain) NSMutableArray *currentLessonInTeach; //nonatomic means not for multithreading; retain means dont delete the variable after it is copied to this array
-- (void) callback;
+- (void) keypressDetectedFromLabel;
 -(void)viewDidUnload;
 @end

@@ -31,7 +31,22 @@
 -(BOOL)canBecomeFirstResponder{
     return YES;
 }
+-(BOOL)isUserInteractionEnabled{
+    return YES;
+}
 
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    NSLog(@"key typed i think");
+    return NO;
+}
+
+/*
+- (void) setDelegate:(id<UITextFieldDelegate>)paramDelegate{
+    MRAAdvancedTextFieldDelegate *limitedDelegate = [[[[MRAAdvancedTextFieldDelegate alloc] init];
+                                                      [super setDelegate:limitedDelegate];
+}
+*/
 
 - (void) setText:(NSString *)text {
  // Set the text by calling the base class method.

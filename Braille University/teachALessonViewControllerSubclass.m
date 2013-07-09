@@ -34,13 +34,29 @@
 
     //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.lessonFeedbackLabel);
     //[self.lessonFeedbackLabel becomeFirstResponder];
-    [self.lessonEntryField becomeFirstResponder];
+    [self.lessonFeedbackLabel becomeFirstResponder];
     
-    //add observer
+    //   ####   add observers   ####
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(callback:)
+                                             selector:@selector(keypressDetectedFromLabel:)
                                                  name:@"UIKeyboardEmptyDelegateNotification"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didReceiveGenericNotification:)
+                                                 name:nil
+                                               object:nil];
+    /*[[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(resignFirstResponder)
+                                                 name:@"UITextFieldTextDidBeginEditingNotification"
+                                               object:self.dummyTextField];
+    */
+    
+    self.dummyTextField.accessibilityTraits = UIAccessibilityTraitNone;
+    //self.dummyTextField.accessibilityLabel = @"test label";
+    //self.dummyTextField.accessibilityHint = @"dummy hint";
+    //self.dummyTextField.isAccessibilityElement = NO;
     
 }
 
@@ -50,13 +66,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)callback:(NSNotification *)localNotification
+- (void)keypressDetectedFromLabel:(NSNotification *)localNotification
 {
-    
+
     NSLog([localNotification name]);
     //[self.lessonEntryField becomeFirstResponder];
 }
 
+- (void)didReceiveGenericNotification:(NSNotification *)localNotification
+
+{
+    NSLog([localNotification name]);
+}
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -104,6 +125,8 @@
     
     
     [self.lessonFeedbackLabel setText:localLessonEntryField.text];   //display the contents of the textbox in the label
+    [self.dummyTextField setText:localLessonEntryField.text];
+
     [self.labelButton setTitle:localLessonEntryField.text forState:UIControlStateNormal];
     
     
@@ -113,7 +136,7 @@
     //[self.dummyTextField becomeFirstResponder];
     //localLessonEntryField.userInteractionEnabled = NO;
     
-    [self.labelButton becomeFirstResponder];
+    //[self.labelButton becomeFirstResponder];
     
     
     //UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, self.lessonFeedbackLabel.text);

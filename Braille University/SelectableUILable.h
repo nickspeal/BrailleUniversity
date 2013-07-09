@@ -14,5 +14,6 @@
 //-(void)text:(NSString *)text; //these 2 were copied from net, not sure what they do
 //-(void)setText:(NSString*)text; //these 2 were copied from net, not sure what they do
 -(BOOL)canBecomeFirstResponder;
+-(BOOL)isUserInteractionEnabled;
 
 @end
