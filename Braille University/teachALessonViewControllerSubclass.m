@@ -33,8 +33,8 @@
     [super viewDidAppear:animated];
 
     //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.lessonFeedbackLabel);
-    //[self.lessonFeedbackLabel becomeFirstResponder];
-    [self.lessonFeedbackLabel becomeFirstResponder];
+
+    [self.lessonEntryField becomeFirstResponder];
     
     //   ####   add observers   ####
     
@@ -52,12 +52,6 @@
                                                  name:@"UITextFieldTextDidBeginEditingNotification"
                                                object:self.dummyTextField];
     */
-    
-    self.dummyTextField.accessibilityTraits = UIAccessibilityTraitNone;
-    //self.dummyTextField.accessibilityLabel = @"test label";
-    //self.dummyTextField.accessibilityHint = @"dummy hint";
-    //self.dummyTextField.isAccessibilityElement = NO;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,7 +62,6 @@
 
 - (void)keypressDetectedFromLabel:(NSNotification *)localNotification
 {
-
     NSLog([localNotification name]);
     //[self.lessonEntryField becomeFirstResponder];
 }
@@ -93,8 +86,13 @@
 
 
 
-- (BOOL)textFieldShouldReturn:(UITextField *)localLessonEntryField {    //takes a text field object as an argument(in this case self.lessonEntryField) and saves it as the local variable localLessonEntryField, which is to be used in this function
-    //called when user hits enter in only this text field, i think
+- (BOOL)textFieldShouldReturn:(UITextField *)localLessonEntryField {
+    /*
+    - takes a text field object as an argument(in this case self.lessonEntryField)
+        - saves it as the local variable localLessonEntryField, which is to be used in this function
+    - called when user hits enter in only this text field, i think
+     
+    */
     
     NSLog(@"textFieldShouldReturn Entered");
        
@@ -118,33 +116,19 @@
     
     //  ----  immediate playback of the text on the screen  ----
     
-    //[self.lessonFeedbackLabel becomeFirstResponder];
-    //UIAccessibilityZoomFocusChanged(UIAccessibilityZoomTypeInsertionPoint,self.lessonFeedbackLabel.frame,self.lessonFeedbackLabel);
-    
+
+    //UIAccessibilityZoomFocusChanged(UIAccessibilityZoomTypeInsertionPoint,self.lessonFeedbackLabel.frame,self.lessonFeedbackLabel);    
     //UIAccessibilityZoomFocusChanged(UIAccessibilityZoomTypeInsertionPoint,self.lessonFeedbackLabel.frame,self.lessonFeedbackLabel); //this reads out loud the label, without changeing the firstResponder, so the textbox is always listening for the keyboard.
     
     
-    [self.lessonFeedbackLabel setText:localLessonEntryField.text];   //display the contents of the textbox in the label
-    [self.dummyTextField setText:localLessonEntryField.text];
-
-    [self.labelButton setTitle:localLessonEntryField.text forState:UIControlStateNormal];
+    [self.lessonFeedbackLabel setText:localLessonEntryField.text];   //display the contents of the textbox in the label    
     
-    
-    [localLessonEntryField setText:@""];                    //wipe the contents of the textbox
+    [localLessonEntryField setText:@""];    //wipe the contents of the textbox
 
-    //[self.lessonEntryField resignFirstResponder];
-    //[self.dummyTextField becomeFirstResponder];
     //localLessonEntryField.userInteractionEnabled = NO;
     
-    //[self.labelButton becomeFirstResponder];
-    
-    
     //UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, self.lessonFeedbackLabel.text);
-    
-    
-    
-    
-    
+
     // Select The whole text field:
     
     //[localLessonEntryField selectAll:self];
@@ -153,14 +137,6 @@
     // UIAccessibilityZoomFocusChanged(UIAccessibilityZoomTypeInsertionPoint,self.lessonFeedbackLabel.frame,self.lessonFeedbackLabel); //this reads out loud the label, without changeing the firstResponder, so the textbox is always listening for the keyboard.
     //the above accessibility thing doesnt seem to do anything -Nick, July 4 2013
     
-    //[self.lessonEntryField resignFirstResponder];
-    //[self.lessonFeedbackLabel becomeFirstResponder]; //shift focus forward and back again for braille display then typing
-    
-    
-    
-    
-    
-    
     //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.lessonFeedbackLabel);
     
     NSLog(@"textFieldShouldReturn method end");
@@ -168,10 +144,10 @@
 }
 
 -(void)viewDidUnload
-
 {
-    [self setLabelButton:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"UIKeyboardEmptyDelegateNotification" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:nil object:nil];
+
     NSLog(@"viewDidUnload method called");
 }
 

@@ -12,9 +12,7 @@
 @interface teachALessonViewControllerSubclass : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *lessonEntryField;
 @property (weak, nonatomic) IBOutlet UILabel *lessonFeedbackLabel;
-@property (weak, nonatomic) IBOutlet UITextField *dummyTextField;
 @property (weak, nonatomic) IBOutlet UILabel *teachIntroLabel;
-@property (weak, nonatomic) IBOutlet UIButton *labelButton;
 @property (nonatomic, retain) NSMutableArray *currentLessonInTeach; //nonatomic means not for multithreading; retain means dont delete the variable after it is copied to this array
 - (void) keypressDetectedFromLabel;
 -(void)viewDidUnload;
