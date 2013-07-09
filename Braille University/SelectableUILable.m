@@ -33,12 +33,20 @@
 }
 
 
+- (void) setText:(NSString *)text {
+ // Set the text by calling the base class method.
+ [super setText:text];
+ // Announce the new text with voiceover
+ //UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, text);
+ }
+
 /*
--(void)text:(NSString *)text{
-    return *super.text;
-}
--(void)setText:(NSString*)text {
-    return super.setText:text;
-}
-*/
+ -(void)text:(NSString *)text{
+ return *super.text;
+ }
+ -(void)setText:(NSString*)text {
+ return super.setText:text;
+ }
+ */
+
 @end
