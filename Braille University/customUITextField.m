@@ -1,15 +1,14 @@
 //
-//  cursorlessUITextField.m
+//  customUITextField.m
 //  Braille University
 //
-//  Created by Nick on 2013-07-08.
+//  Created by Nick on 2013-07-09.
 //  Copyright (c) 2013 HCI. All rights reserved.
 //
 
-#import "cursorlessUITextField.h"
+#import "customUITextField.h"
 
-@implementation cursorlessUITextField
-
+@implementation customUITextField
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -20,11 +19,21 @@
     return self;
 }
 /*
-- (CGRect)caretRectForPosition:(UITextPosition *)position
+-(BOOL)isAccessibilityElement
 {
-    return CGRectZero;
+    return YES;
+}
+
+- (NSString *)accessibilityHint
+{
+    return NSLocalizedString(@"Hint goes here", nil);
 }
 */
+- (UIAccessibilityTraits)accessibilityTraits
+{
+    return UIAccessibilityTraitStaticText;
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

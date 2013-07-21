@@ -13,6 +13,7 @@
 		0161FBEB1700A987008B383F /* teachALessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */; };
 		0161FBEE1700B735008B383F /* saveViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBED1700B735008B383F /* saveViewControllerSubclass.m */; };
 		0161FBF11700BA66008B383F /* EndLessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBF01700BA66008B383F /* EndLessonViewControllerSubclass.m */; };
+		017B078D178BE8900080BE19 /* customUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 017B078C178BE8900080BE19 /* customUITextField.m */; };
 		2E3FCB7B16D99E0B00D8CB15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7A16D99E0B00D8CB15 /* UIKit.framework */; };
 		2E3FCB7D16D99E0B00D8CB15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7C16D99E0B00D8CB15 /* Foundation.framework */; };
 		2E3FCB7F16D99E0B00D8CB15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7E16D99E0B00D8CB15 /* CoreGraphics.framework */; };
@@ -58,6 +59,8 @@
 		0161FBED1700B735008B383F /* saveViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = saveViewControllerSubclass.m; sourceTree = "<group>"; };
 		0161FBEF1700BA66008B383F /* EndLessonViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndLessonViewControllerSubclass.h; sourceTree = "<group>"; };
 		0161FBF01700BA66008B383F /* EndLessonViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndLessonViewControllerSubclass.m; sourceTree = "<group>"; };
+		017B078B178BE8900080BE19 /* customUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customUITextField.h; sourceTree = "<group>"; };
+		017B078C178BE8900080BE19 /* customUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customUITextField.m; sourceTree = "<group>"; };
 		2E06A95F16DC4C8B0031250F /* UIAccessibilityZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAccessibilityZoom.h; sourceTree = "<group>"; };
 		2E3FCB7716D99E0B00D8CB15 /* Braille University.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Braille University.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3FCB7A16D99E0B00D8CB15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -155,6 +158,8 @@
 				2E3FCB8116D99E0B00D8CB15 /* Supporting Files */,
 				2EEF1DCE16F775770017E03D /* SelectableUILable.h */,
 				2EEF1DCF16F775770017E03D /* SelectableUILable.m */,
+				017B078B178BE8900080BE19 /* customUITextField.h */,
+				017B078C178BE8900080BE19 /* customUITextField.m */,
 				0161FBE91700A987008B383F /* teachALessonViewControllerSubclass.h */,
 				0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */,
 				0161FBEC1700B735008B383F /* saveViewControllerSubclass.h */,
@@ -331,6 +336,7 @@
 				01150DC21700CC050083A6E5 /* tableViewController.m in Sources */,
 				01150DC51700CDD90083A6E5 /* libraryViewControllerSubclass.m in Sources */,
 				5B7461441701F1CA00766A84 /* textbookViewController.m in Sources */,
+				017B078D178BE8900080BE19 /* customUITextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
