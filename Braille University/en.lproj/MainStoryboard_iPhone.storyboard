@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0nL-JL-Ldg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0nL-JL-Ldg">
     <dependencies>
         <deployment version="1296" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
@@ -670,55 +670,6 @@
             <point key="canvasLocation" x="60" y="-376"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="EndLessonViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EndLessonViewControllerSubclass.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="newLessonStarted:"/>
-            </relationships>
-        </class>
-        <class className="customUITextField" superclassName="UITextField">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/customUITextField.h"/>
-        </class>
-        <class className="lessonController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/lessonController.h"/>
-        </class>
-        <class className="libraryViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/libraryViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="action" name="loadLectureNotes"/>
-            </relationships>
-        </class>
-        <class className="saveViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/saveViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="action" name="saveThisLesson"/>
-                <relationship kind="action" name="typingDone:"/>
-                <relationship kind="outlet" name="textFieldSaveLesson" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tableViewController.h"/>
-        </class>
-        <class className="teachALessonViewControllerSubclass" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/teachALessonViewControllerSubclass.h"/>
-            <relationships>
-                <relationship kind="outlet" name="lessonEntryField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lessonFeedbackLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="teachIntroLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="textbookViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/textbookViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="easyButtonPressed"/>
-                <relationship kind="action" name="intermediateButtonPressed"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

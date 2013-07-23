@@ -34,6 +34,9 @@
 		2E6F2C0A17014BFF00805F9D /* intermediate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F2C0817014BFF00805F9D /* intermediate.txt */; };
 		2EEF1DD016F775770017E03D /* SelectableUILable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF1DCF16F775770017E03D /* SelectableUILable.m */; };
 		5B7461441701F1CA00766A84 /* textbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7461431701F1CA00766A84 /* textbookViewController.m */; };
+		5B7D67B1179E05D1000C54FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D67B0179E05D1000C54FB /* AudioToolbox.framework */; };
+		5B7D67B3179E0C83000C54FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D67B2179E0C83000C54FB /* AVFoundation.framework */; };
+		5B7D67B5179E1074000C54FB /* doorbell2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D67B4179E1074000C54FB /* doorbell2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		2EEF1DCF16F775770017E03D /* SelectableUILable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableUILable.m; sourceTree = "<group>"; };
 		5B7461421701F1CA00766A84 /* textbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textbookViewController.h; sourceTree = "<group>"; };
 		5B7461431701F1CA00766A84 /* textbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textbookViewController.m; sourceTree = "<group>"; };
+		5B7D67B0179E05D1000C54FB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5B7D67B2179E0C83000C54FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B7D67B4179E1074000C54FB /* doorbell2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = doorbell2.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7D67B3179E0C83000C54FB /* AVFoundation.framework in Frameworks */,
+				5B7D67B1179E05D1000C54FB /* AudioToolbox.framework in Frameworks */,
 				2E3FCB7B16D99E0B00D8CB15 /* UIKit.framework in Frameworks */,
 				2E3FCB7D16D99E0B00D8CB15 /* Foundation.framework in Frameworks */,
 				2E3FCB7F16D99E0B00D8CB15 /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +127,8 @@
 		2E3FCB6E16D99E0B00D8CB15 = {
 			isa = PBXGroup;
 			children = (
+				5B7D67B2179E0C83000C54FB /* AVFoundation.framework */,
+				5B7D67B0179E05D1000C54FB /* AudioToolbox.framework */,
 				2E3FCB8016D99E0B00D8CB15 /* Braille University */,
 				2E3FCBA716D99E0B00D8CB15 /* Braille UniversityTests */,
 				2E3FCB7916D99E0B00D8CB15 /* Frameworks */,
@@ -181,6 +191,7 @@
 		2E3FCB8116D99E0B00D8CB15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B7D67B4179E1074000C54FB /* doorbell2.wav */,
 				2E6F2C0717014BFE00805F9D /* easy.txt */,
 				2E6F2C0817014BFF00805F9D /* intermediate.txt */,
 				2E3FCB8216D99E0B00D8CB15 /* Braille University-Info.plist */,
@@ -291,6 +302,7 @@
 				2E3FCB9416D99E0B00D8CB15 /* MainStoryboard_iPhone.storyboard in Resources */,
 				2E6F2C0917014BFF00805F9D /* easy.txt in Resources */,
 				2E6F2C0A17014BFF00805F9D /* intermediate.txt in Resources */,
+				5B7D67B5179E1074000C54FB /* doorbell2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

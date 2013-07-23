@@ -8,6 +8,7 @@
 
 #import "teachALessonViewControllerSubclass.h"
 #import "EndLessonViewControllerSubclass.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface teachALessonViewControllerSubclass ()
 
@@ -33,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -60,6 +62,9 @@
                                                  name:@"UITextFieldTextDidBeginEditingNotification"
                                                object:self.dummyTextField];
     */
+    
+    /* Disable lock timer */
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -150,6 +155,12 @@
     
     //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.lessonFeedbackLabel);
     
+    
+    /* Play confirmation sound */
+    NSURL *file = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"doorbell2" ofType:@"wav"]];
+    self.confirmationSound = [[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
+    [self.confirmationSound play];
+    
     NSLog(@"textFieldShouldReturn method end");
     return YES;
 }
@@ -160,6 +171,12 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:nil object:nil];
 
     NSLog(@"viewDidUnload method called");
+}
+
+-(void)viewDidDisappear
+{
+    /* Restore lock timer */
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
 }
 
 @end
