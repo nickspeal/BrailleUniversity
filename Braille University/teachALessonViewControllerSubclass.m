@@ -25,12 +25,14 @@
     return self;
 }
 
+/*  not sure what this was supposed to be...
+ 
 - (id)initWithAccessibilityContainer:(id)container
 {
     
     
 }
-
+*/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -44,7 +46,8 @@
 
     [self.lessonEntryField becomeFirstResponder];
     
-    
+
+
     
     //   ####   add observers   ####
     
@@ -157,6 +160,7 @@
     
     
     /* Play confirmation sound */
+
     NSURL *file = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"doorbell2" ofType:@"wav"]];
     self.confirmationSound = [[AVAudioPlayer alloc] initWithContentsOfURL:file error:nil];
     [self.confirmationSound play];
