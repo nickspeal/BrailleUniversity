@@ -86,7 +86,7 @@
 - (void)didReceiveGenericNotification:(NSNotification *)localNotification
 
 {
-    NSLog([localNotification name]);
+    //NSLog([localNotification name]);
 }
 
 
