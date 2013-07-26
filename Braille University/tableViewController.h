@@ -10,7 +10,7 @@
 
 @interface tableViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *nameList;
+@property (strong, nonatomic) NSMutableArray *nameList;
 @property (nonatomic) int selectedIndex;
 
 @end

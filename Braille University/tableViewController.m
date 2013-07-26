@@ -78,40 +78,67 @@
     }
     
     NSString *name;
-    //NSLog([NSString stringWithFormat:@"%@", self.title]);
-    if ([self.title isEqualToString:@"Lecture Notes"]) {
-        
-        name = [(NSString *)[self.nameList objectAtIndex:([self.nameList count] - 2 - indexPath.row )] componentsSeparatedByString:@":::"][0];
-        
-    } else {
-        name = [(NSString *)[self.nameList objectAtIndex:indexPath.row] componentsSeparatedByString:@":::"][0];
-    }
     
-    cell.textLabel.text = name;//[self.nameList objectAtIndex:indexPath.row];
+    name = [(NSString *)[self.nameList objectAtIndex:indexPath.row] componentsSeparatedByString:@":::"][0];
+    
+    cell.textLabel.text = name;
     return cell;
 }
 
-
+/* Perform segue to the next table view controller when lesson is tapped */
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.title isEqualToString:@"Lecture Notes"]) {
-        self.selectedIndex = [self.nameList count] - 2 - indexPath.row;
-    } else {
-        self.selectedIndex = indexPath.row;
-    }
     
+    self.selectedIndex = indexPath.row;
     
     [self performSegueWithIdentifier:@"chooseSpecificLesson" sender:self];
-    
 }
 
+/* Initialize parameters for lesson controller */
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    lessonController *dest = (lessonController *)[segue destinationViewController];
     
-    //int index = [segue.identifier intValue];
+    lessonController *dest = (lessonController *)[segue destinationViewController];
 
     NSArray *lessonLists = [self.nameList[self.selectedIndex] componentsSeparatedByString:@":::"];
     
     dest.lessons = [lessonLists copy];
+}
+
+
+/* Allow the entries to be deleted, only on lecture notes */
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //todo: use localization string
+    if ([self.title isEqualToString:@"Lecture Notes"]) {
+        return UITableViewCellEditingStyleDelete;
+    }
+    return UITableViewCellEditingStyleNone;
+}
+
+
+/* Handle deletion */
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    /* Remove lesson from array */
+    [self.nameList removeObjectAtIndex:indexPath.row];
+    
+    /* Remove lesson from file by overwriting file */
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"lectureNotes.txt"];
+    NSString *newFileContents = @"";
+
+    for(int i = 0; i < [self.nameList count]; i++) {
+        newFileContents = [newFileContents stringByAppendingString:self.nameList[i]];
+        newFileContents = [newFileContents stringByAppendingString:@"\n"];  
+    }
+ 
+    [newFileContents writeToFile:filePath atomically:TRUE encoding:NSUTF8StringEncoding error:NULL];
+
+}
+
+/* Reloads view after deletion */
+- (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView reloadData];
 }
 
 
