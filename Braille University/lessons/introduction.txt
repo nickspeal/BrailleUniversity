@@ -1,0 +1,6 @@
+Counting Cells\ta\ta a\ta a a\ta a a a\ta a a a a\t
+Letters A to F\ta a a a\tb b b b\tc c c c\td d d d\te e e e\tf f f f
+Letters G to O\tg g g g\th h h h\ti i i i\tj j j\tk k k\tl l l\tm m m\tn n n\to o o
+Letters P to U\tp p p\tq q q\tr r r\ts s s\tt t t\tu u u
+Letters V to Z\tv v v\tw w w\tx x x\ty y y\tz z z
+Easy Words\tbad\tdad\tfad\tdab\tmat\tmom\ttoo\trun\tfun

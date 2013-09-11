@@ -1,0 +1,3 @@
+More Words\tmake\tgood\tgrade\ttent\tcame\tstop\twalk
+Punctuation\t . period\t ? question mark\t ! exclamation point
+Sentences\tSee the dog run\tMy name is\tHow are you?\tThis is fun!
