@@ -29,5 +29,16 @@
          landmarkName = "-textView:shouldChangeTextInRange:replacementText:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Braille University/teachALessonViewControllerSubclass.m"
+         timestampString = "396297164.357121"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "131"
+         endingLineNumber = "131">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
