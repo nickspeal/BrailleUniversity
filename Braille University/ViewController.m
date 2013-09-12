@@ -41,6 +41,8 @@
     
     //[self.view addGestureRecognizer:tap];
     
+    NSLog(@"locale: %@", [[NSLocale currentLocale] localeIdentifier]);
+    
 }
 
 - (void)didReceiveMemoryWarning

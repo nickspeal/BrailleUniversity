@@ -46,7 +46,7 @@
     
     //NSString *toSplit = @"name:::part1:::part2";
     self.list = [fileContents componentsSeparatedByString:@"\n"];
-    self.destTitle = @"Easy Lessons";
+    self.destTitle = NSLocalizedString(@"EASY_STR", @"Title for easy lessons view"); //@"Easy Lessons";
 
 }
 
@@ -61,7 +61,8 @@
     
     //NSString *toSplit = @"name:::part1:::part2";
     self.list = [fileContents componentsSeparatedByString:@"\n"];
-    self.destTitle = @"Intermediate Lessons";
+    //self.destTitle = @"Intermediate Lessons";
+    self.destTitle = NSLocalizedString(@"INT_STR", @"Title for intermediate lessons view");
 
 }
 

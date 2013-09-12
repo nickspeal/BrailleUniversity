@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.list = [NSMutableArray array];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,16 +42,26 @@
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"lectureNotes.txt"];
     
     NSString *fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+    
+    
+    NSLog(fileContents);
         
     //NSString *toSplit = @"name:::part1:::part2";
-    self.list = [fileContents componentsSeparatedByString:@"\n"];
+    [self.list removeAllObjects];
+    [self.list addObjectsFromArray:[fileContents componentsSeparatedByString:@"\n"]];
+    
+    NSLog(@"Printing fileContents:");
+    NSLog(fileContents);
     
     /* Removes the last empty line if necessary */
     if ([self.list objectAtIndex:([self.list count] - 1)]) {
-        NSRange validRange;
+        /*NSRange validRange;
         validRange.location = 0;
         validRange.length = [self.list count] - 1;
-        self.list = [self.list subarrayWithRange:validRange];
+        [self.list removeAllObjects];
+        [self.list addObjectsFromArray:[self.list subarrayWithRange:validRange]];*/
+        
+        [self.list removeObjectAtIndex:([self.list count] - 1)];
     }
 }
 
@@ -61,8 +72,12 @@
         tableViewController *dest = (tableViewController *)[segue destinationViewController];
 
         /* Revert array so that the last lessons are displayed first */
-        dest.nameList = [[self.list reverseObjectEnumerator] allObjects];
+        dest.nameList = [NSMutableArray array];
+        [dest.nameList addObjectsFromArray:[[self.list reverseObjectEnumerator] allObjects]];
         [dest setTitle:@"Lecture Notes"];
+        
+        NSLog(@"Here");
+        NSLog([self.list objectAtIndex:0]);
     }
 }
 

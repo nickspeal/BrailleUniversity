@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Braille University
+
+  Created by Martin M on 13-08-08.
+  Copyright (c) 2013 HCI. All rights reserved.
+*/
+
+
+/* Easy */
+"EASY_STR" = "Easy Lessons";
+
+/* Intermediate */
+"INT_STR" = "Intermediate Lessons";
