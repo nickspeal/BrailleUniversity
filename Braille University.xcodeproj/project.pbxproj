@@ -14,8 +14,6 @@
 		0161FBEE1700B735008B383F /* saveViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBED1700B735008B383F /* saveViewControllerSubclass.m */; };
 		0161FBF11700BA66008B383F /* EndLessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBF01700BA66008B383F /* EndLessonViewControllerSubclass.m */; };
 		017B078D178BE8900080BE19 /* customUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 017B078C178BE8900080BE19 /* customUITextField.m */; };
-		2E3FCB7B16D99E0B00D8CB15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7A16D99E0B00D8CB15 /* UIKit.framework */; };
-		2E3FCB7D16D99E0B00D8CB15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7C16D99E0B00D8CB15 /* Foundation.framework */; };
 		2E3FCB7F16D99E0B00D8CB15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7E16D99E0B00D8CB15 /* CoreGraphics.framework */; };
 		2E3FCB8516D99E0B00D8CB15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3FCB8316D99E0B00D8CB15 /* InfoPlist.strings */; };
 		2E3FCB8716D99E0B00D8CB15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FCB8616D99E0B00D8CB15 /* main.m */; };
@@ -38,6 +36,8 @@
 		5B7D67B1179E05D1000C54FB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D67B0179E05D1000C54FB /* AudioToolbox.framework */; };
 		5B7D67B3179E0C83000C54FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7D67B2179E0C83000C54FB /* AVFoundation.framework */; };
 		5B7D67B5179E1074000C54FB /* doorbell2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D67B4179E1074000C54FB /* doorbell2.wav */; };
+		5BAF56CE17E181F3009E3C7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7C16D99E0B00D8CB15 /* Foundation.framework */; };
+		5BAF56CF17E181F9009E3C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7A16D99E0B00D8CB15 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +93,8 @@
 		2EEF1DCF16F775770017E03D /* SelectableUILable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableUILable.m; sourceTree = "<group>"; };
 		5B7461421701F1CA00766A84 /* textbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textbookViewController.h; sourceTree = "<group>"; };
 		5B7461431701F1CA00766A84 /* textbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = textbookViewController.m; sourceTree = "<group>"; };
-		5B781B0C17B488DC004333F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		5B781B0E17B488E3004333F1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5B781B0C17B488DC004333F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5B781B0E17B488E3004333F1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5B79B06117AECC82003363CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		5B79B06417AEEB7F003363CA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainStoryboard_iPhone.strings; sourceTree = "<group>"; };
 		5B79B06517AEEB80003363CA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,10 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAF56CF17E181F9009E3C7E /* UIKit.framework in Frameworks */,
+				5BAF56CE17E181F3009E3C7E /* Foundation.framework in Frameworks */,
 				5B7D67B3179E0C83000C54FB /* AVFoundation.framework in Frameworks */,
 				5B7D67B1179E05D1000C54FB /* AudioToolbox.framework in Frameworks */,
-				2E3FCB7B16D99E0B00D8CB15 /* UIKit.framework in Frameworks */,
-				2E3FCB7D16D99E0B00D8CB15 /* Foundation.framework in Frameworks */,
 				2E3FCB7F16D99E0B00D8CB15 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
