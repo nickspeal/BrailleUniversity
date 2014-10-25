@@ -88,7 +88,7 @@
     //add title
     NSString *newFileContents = [fileContents stringByAppendingString:self.textFieldSaveLesson.text]; //append to newFileContents string
     for (int i = 0; i < [self.currentLessonInSave count]; i++) {
-        newFileContents = [newFileContents stringByAppendingString:@":::"]; //append to newFileContents string
+        newFileContents = [newFileContents stringByAppendingString:@"\t"]; //append to newFileContents string
         newFileContents = [newFileContents stringByAppendingString:self.currentLessonInSave[i]]; //append to newFileContents string        
     }
     newFileContents = [newFileContents stringByAppendingString:@"\n"]; //append to newFileContents string

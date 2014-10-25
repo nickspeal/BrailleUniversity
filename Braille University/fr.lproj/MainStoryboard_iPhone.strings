@@ -1,0 +1,189 @@
+
+/* Class = "IBUINavigationItem"; title = "Library"; ObjectID = "11j-H7-SJd"; */
+"11j-H7-SJd.title" = "Library";
+
+/* Class = "IBUILabel"; text = "World"; ObjectID = "1ky-Ue-nFx"; */
+"1ky-Ue-nFx.text" = "World";
+
+/* Class = "IBUITextField"; accessibilityHint = "To record a lesson, begin typing what you want to appear on the braille output display. Press enter to move on to the next word."; ObjectID = "1oO-Lq-ThK"; */
+"1oO-Lq-ThK.accessibilityHint" = "To record a lesson, begin typing what you want to appear on the braille output display. Press enter to move on to the next word.";
+
+/* Class = "IBUIButton"; normalTitle = "Save Successful! Return to Campus"; ObjectID = "23z-xq-yU5"; */
+"23z-xq-yU5.normalTitle" = "Save Successful! Return to Campus";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "2Zh-Xb-s2U"; */
+"2Zh-Xb-s2U.title" = "Back";
+
+/* Class = "IBUILabel"; text = "To teach a lesson to your student, sit at a desk with your QWERTY keyboard connected to the iOS device in front of you. Make sure you have headphones on so that the words aren’t given away! The student should have the refreshable braille display in front of them, already connected with Bluetooth."; ObjectID = "4yh-Kd-Lp0"; */
+"4yh-Kd-Lp0.text" = "To teach a lesson to your student, sit at a desk with your QWERTY keyboard connected to the iOS device in front of you. Make sure you have headphones on so that the words aren’t given away! The student should have the refreshable braille display in front of them, already connected with Bluetooth.";
+
+/* Class = "IBUIButton"; accessibilityHint = "You'll get to save or quit on the next page"; ObjectID = "583-OX-38m"; */
+"583-OX-38m.accessibilityHint" = "You'll get to save or quit on the next page";
+
+/* Class = "IBUIButton"; normalTitle = "End Lesson"; ObjectID = "583-OX-38m"; */
+"583-OX-38m.normalTitle" = "End Lesson";
+
+/* Class = "IBUIButton"; accessibilityHint = "Start teaching a lesson and have it recorded for playback later"; ObjectID = "7oX-VN-GSQ"; */
+"7oX-VN-GSQ.accessibilityHint" = "Start teaching a lesson and have it recorded for playback later";
+
+/* Class = "IBUIButton"; accessibilityLabel = "Teach a Lesson"; ObjectID = "7oX-VN-GSQ"; */
+"7oX-VN-GSQ.accessibilityLabel" = "Teach a Lesson";
+
+/* Class = "IBUIButton"; normalTitle = "Teach a Lesson"; ObjectID = "7oX-VN-GSQ"; */
+"7oX-VN-GSQ.normalTitle" = "Teach a Lesson";
+
+/* Class = "IBUIButton"; accessibilityHint = "Don't save the lesson and return to the home screen"; ObjectID = "CCU-S6-xaq"; */
+"CCU-S6-xaq.accessibilityHint" = "Don't save the lesson and return to the home screen";
+
+/* Class = "IBUIButton"; normalTitle = "Done and Quit"; ObjectID = "CCU-S6-xaq"; */
+"CCU-S6-xaq.normalTitle" = "Done and Quit";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "CYf-gC-jDG"; */
+"CYf-gC-jDG.title" = "Back";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "Chh-e6-sak"; */
+"Chh-e6-sak.title" = "Back";
+
+/* Class = "IBUIButton"; normalTitle = "Easy"; ObjectID = "ERE-sj-PzH"; */
+"ERE-sj-PzH.normalTitle" = "Easy";
+
+/* Class = "IBUIButton"; normalTitle = "Save and Name Lesson"; ObjectID = "EbR-mV-6a1"; */
+"EbR-mV-6a1.normalTitle" = "Save and Name Lesson";
+
+/* Class = "IBUILabel"; text = "B B B B B B"; ObjectID = "Euq-EF-0s3"; */
+"Euq-EF-0s3.text" = "B B B B B B";
+
+/* Class = "IBUIButton"; normalTitle = "Intermediate"; ObjectID = "Fy8-qZ-EMi"; */
+"Fy8-qZ-EMi.normalTitle" = "Intermediate";
+
+/* Class = "IBUILabel"; text = "Location of preloaded material for practice.  May or may not be included in this project."; ObjectID = "GO6-S7-hEw"; */
+"GO6-S7-hEw.text" = "Location of preloaded material for practice.  May or may not be included in this project.";
+
+/* Class = "IBUINavigationItem"; title = "End Lesson"; ObjectID = "LGp-Bx-YL5"; */
+"LGp-Bx-YL5.title" = "End Lesson";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "LP0-xP-1Jm"; */
+"LP0-xP-1Jm.title" = "Back";
+
+/* Class = "IBUILabel"; text = "Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  "; ObjectID = "NUJ-3r-jEL"; */
+"NUJ-3r-jEL.text" = "Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  ";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "O09-p8-aPd"; */
+"O09-p8-aPd.title" = "Back";
+
+/* Class = "IBUIButton"; accessibilityHint = "Play back a previously recorded lesson"; ObjectID = "OJw-YE-ceX"; */
+"OJw-YE-ceX.accessibilityHint" = "Play back a previously recorded lesson";
+
+/* Class = "IBUIButton"; normalTitle = "Go to the Library"; ObjectID = "OJw-YE-ceX"; */
+"OJw-YE-ceX.normalTitle" = "Go to the Library";
+
+/* Class = "IBUIButton"; normalTitle = "Lesson 1"; ObjectID = "OaC-tu-QWh"; */
+"OaC-tu-QWh.normalTitle" = "Lesson 1";
+
+/* Class = "IBUINavigationItem"; title = "Lesson 1"; ObjectID = "RB0-pB-jqe"; */
+"RB0-pB-jqe.title" = "Lesson 1";
+
+/* Class = "IBUIButton"; normalTitle = "Lesson 2"; ObjectID = "Rua-i4-zuW"; */
+"Rua-i4-zuW.normalTitle" = "Lesson 2";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "Ssd-Qt-xFV"; */
+"Ssd-Qt-xFV.title" = "Back";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "X3Q-hN-8IB"; */
+"X3Q-hN-8IB.title" = "Back";
+
+/* Class = "IBUILabel"; text = "You can resume typing right away, and press enter to update the display."; ObjectID = "Y7B-sL-O6o"; */
+"Y7B-sL-O6o.text" = "You can resume typing right away, and press enter to update the display.";
+
+/* Class = "IBUINavigationItem"; title = "Help Desk"; ObjectID = "a12-7R-S6W"; */
+"a12-7R-S6W.title" = "Help Desk";
+
+/* Class = "IBUILabel"; text = "Select “Teach a Lesson” from the main campus home screen. At this point, you are presented with a textbox that you can type into. Press enter for your letters, words, or phrases to appear on the refreshable braille display."; ObjectID = "aoC-sa-z8O"; */
+"aoC-sa-z8O.text" = "Select “Teach a Lesson” from the main campus home screen. At this point, you are presented with a textbox that you can type into. Press enter for your letters, words, or phrases to appear on the refreshable braille display.";
+
+/* Class = "IBUILabel"; text = "Teach your students to read Braille on a refreshable braille display with this completely accessible app."; ObjectID = "ard-Zh-rWS"; */
+"ard-Zh-rWS.text" = "Teach your students to read Braille on a refreshable braille display with this completely accessible app.";
+
+/* Class = "IBUILabel"; text = "Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  "; ObjectID = "b65-Ux-ybW"; */
+"b65-Ux-ybW.text" = "Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  ";
+
+/* Class = "IBUITextField"; accessibilityHint = "Enter the name of the lesson and press enter to save"; ObjectID = "c0k-4k-y4h"; */
+"c0k-4k-y4h.accessibilityHint" = "Enter the name of the lesson and press enter to save";
+
+/* Class = "IBUITextField"; placeholder = "Name of Lesson"; ObjectID = "c0k-4k-y4h"; */
+"c0k-4k-y4h.placeholder" = "Name of Lesson";
+
+/* Class = "IBUILabel"; text = "When the lesson is over, swipe right to save or quit."; ObjectID = "cE5-SM-7et"; */
+"cE5-SM-7et.text" = "When the lesson is over, swipe right to save or quit.";
+
+/* Class = "IBUINavigationItem"; prompt = "Use your braille display to practice the lesson.  Read from the display and advance to the next item using the next button.  "; ObjectID = "dvz-yV-vYo"; */
+"dvz-yV-vYo.prompt" = "Use your braille display to practice the lesson.  Read from the display and advance to the next item using the next button.  ";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "eJM-wv-9Yk"; */
+"eJM-wv-9Yk.title" = "Back";
+
+/* Class = "IBUILabel"; text = "A A A A A A "; ObjectID = "fZR-KK-u1d"; */
+"fZR-KK-u1d.text" = "A A A A A A ";
+
+/* Class = "IBUILabel"; text = "Hello"; ObjectID = "hbL-zf-qMR"; */
+"hbL-zf-qMR.text" = "Hello";
+
+/* Class = "IBUINavigationItem"; title = "Textbook"; ObjectID = "ifg-dC-33H"; */
+"ifg-dC-33H.title" = "Textbook";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "ijq-FV-cSK"; */
+"ijq-FV-cSK.title" = "Back";
+
+/* Class = "IBUINavigationItem"; title = "Teach a Lesson"; ObjectID = "koe-oV-OQG"; */
+"koe-oV-OQG.title" = "Teach a Lesson";
+
+/* Class = "IBUINavigationItem"; title = "Lesson 2"; ObjectID = "l94-Df-WUU"; */
+"l94-Df-WUU.title" = "Lesson 2";
+
+/* Class = "IBUINavigationItem"; title = "Save and Name"; ObjectID = "m1a-hj-GoX"; */
+"m1a-hj-GoX.title" = "Save and Name";
+
+/* Class = "IBUIButton"; accessibilityHint = "Access your recorded lessons"; ObjectID = "mPP-r6-a4o"; */
+"mPP-r6-a4o.accessibilityHint" = "Access your recorded lessons";
+
+/* Class = "IBUIButton"; normalTitle = "Lecture Notes"; ObjectID = "mPP-r6-a4o"; */
+"mPP-r6-a4o.normalTitle" = "Lecture Notes";
+
+/* Class = "IBUILabel"; text = "This is the end of the user manual. You can now return to campus by tapping the back button in the top-left of the page."; ObjectID = "nQv-yI-IjR"; */
+"nQv-yI-IjR.text" = "This is the end of the user manual. You can now return to campus by tapping the back button in the top-left of the page.";
+
+/* Class = "IBUINavigationItem"; title = "Welcome to Campus"; ObjectID = "oZh-qh-64E"; */
+"oZh-qh-64E.title" = "Welcome to Campus";
+
+/* Class = "IBUINavigationItem"; title = "Lecture Notes"; ObjectID = "olo-dw-0Wg"; */
+"olo-dw-0Wg.title" = "Lecture Notes";
+
+/* Class = "IBUILabel"; text = "Welcome to the Help Desk. Swipe right to hear the next item. The back button is in the top-left of the page to return to campus."; ObjectID = "pYS-UI-zU3"; */
+"pYS-UI-zU3.text" = "Welcome to the Help Desk. Swipe right to hear the next item. The back button is in the top-left of the page to return to campus.";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "tOf-cl-zcc"; */
+"tOf-cl-zcc.title" = "Back";
+
+/* Class = "IBUILabel"; text = "To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook. "; ObjectID = "uEx-ZO-bBj"; */
+"uEx-ZO-bBj.text" = "To practice an existing lesson, select “Go to the Library” from the main campus home screen. Your recorded lessons are stored in the lecture notes, and stock lessons are in the textbook. ";
+
+/* Class = "IBUIButton"; accessibilityHint = "Access reference material"; ObjectID = "v5B-is-BTE"; */
+"v5B-is-BTE.accessibilityHint" = "Access reference material";
+
+/* Class = "IBUIButton"; normalTitle = "Textbook"; ObjectID = "v5B-is-BTE"; */
+"v5B-is-BTE.normalTitle" = "Textbook";
+
+/* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "vUD-6Q-sBM"; */
+"vUD-6Q-sBM.title" = "Back";
+
+/* Class = "IBUILabel"; text = "Braille University is a tool for instructors like you to teach students Braille at any pace with the freedom of choosing your own curriculum. It requires a refreshable Braille display, headphones, and a Bluetooth QWERTY keyboard. Type any letters, words, or phrases and they will appear on the braille display for your student to read. These lessons can be saved and replayed for practice at home!"; ObjectID = "wpK-iS-eJv"; */
+"wpK-iS-eJv.text" = "small test text in french";
+
+/* Class = "IBUINavigationItem"; title = "Lecture Notes"; ObjectID = "yTo-oi-ci6"; */
+"yTo-oi-ci6.title" = "Lecture Notes";
+
+/* Class = "IBUIButton"; accessibilityHint = "Provides helpful information about the application and directions for using it"; ObjectID = "z2L-T2-nib"; */
+"z2L-T2-nib.accessibilityHint" = "Provides helpful information about the application and directions for using it";
+
+/* Class = "IBUIButton"; normalTitle = "Help Desk"; ObjectID = "z2L-T2-nib"; */
+"z2L-T2-nib.normalTitle" = "Help Desk";

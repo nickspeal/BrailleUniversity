@@ -35,9 +35,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //NSLog(self.nameList );
-    //NSLog(@"Printing from the new view");
+    NSLog(@"Printing lesson list");
     for (int i = 0; i < [self.nameList count]; i++) {
-        //NSLog(self.nameList[i]);
+        NSLog(self.nameList[i]);
     }
 }
 
@@ -63,7 +63,7 @@
     // Return the number of rows in the section.
     //return 0;
     //Kills the last (empty) line
-    return [self.nameList count] - 1;
+    return [self.nameList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,7 +79,7 @@
     
     NSString *name;
     
-    name = [(NSString *)[self.nameList objectAtIndex:indexPath.row] componentsSeparatedByString:@":::"][0];
+    name = [(NSString *)[self.nameList objectAtIndex:indexPath.row] componentsSeparatedByString:@"\t"][0];
     
     cell.textLabel.text = name;
     return cell;
@@ -98,7 +98,7 @@
     
     lessonController *dest = (lessonController *)[segue destinationViewController];
 
-    NSArray *lessonLists = [self.nameList[self.selectedIndex] componentsSeparatedByString:@":::"];
+    NSArray *lessonLists = [self.nameList[self.selectedIndex] componentsSeparatedByString:@"\t"];
     
     dest.lessons = [lessonLists copy];
 }

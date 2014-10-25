@@ -10,7 +10,7 @@
 #import "tableViewController.h"
 
 @interface libraryViewControllerSubclass : UIViewController
-@property NSArray *list;
+@property NSMutableArray *list;
 - (IBAction) loadLectureNotes;
 
 @end

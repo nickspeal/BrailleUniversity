@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BCEB0539-686E-428F-ABE1-AD1139A04246</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Braille University</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ED8D06840C45BFABE32BA7FC4163A9E7009B5649</key>
+		<string>https://github.com/nickspeal/hciGit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Braille University.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ED8D06840C45BFABE32BA7FC4163A9E7009B5649</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nickspeal/hciGit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ED8D06840C45BFABE32BA7FC4163A9E7009B5649</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ED8D06840C45BFABE32BA7FC4163A9E7009B5649</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hciGit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
