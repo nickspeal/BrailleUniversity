@@ -10,6 +10,7 @@
 		01150DC11700CC050083A6E5 /* lessonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DBE1700CC050083A6E5 /* lessonController.m */; };
 		01150DC21700CC050083A6E5 /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DC01700CC050083A6E5 /* tableViewController.m */; };
 		01150DC51700CDD90083A6E5 /* libraryViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DC41700CDD90083A6E5 /* libraryViewControllerSubclass.m */; };
+		014C77BA1A00441D002C4BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014C77B91A00441D002C4BEF /* Images.xcassets */; };
 		0161FBEB1700A987008B383F /* teachALessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */; };
 		0161FBEE1700B735008B383F /* saveViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBED1700B735008B383F /* saveViewControllerSubclass.m */; };
 		0161FBF11700BA66008B383F /* EndLessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBF01700BA66008B383F /* EndLessonViewControllerSubclass.m */; };
@@ -57,6 +58,7 @@
 		01150DC01700CC050083A6E5 /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = "<group>"; };
 		01150DC31700CDD90083A6E5 /* libraryViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libraryViewControllerSubclass.h; sourceTree = "<group>"; };
 		01150DC41700CDD90083A6E5 /* libraryViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libraryViewControllerSubclass.m; sourceTree = "<group>"; };
+		014C77B91A00441D002C4BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		0161FBE91700A987008B383F /* teachALessonViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teachALessonViewControllerSubclass.h; sourceTree = "<group>"; };
 		0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teachALessonViewControllerSubclass.m; sourceTree = "<group>"; };
 		0161FBEC1700B735008B383F /* saveViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saveViewControllerSubclass.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		2E3FCB8016D99E0B00D8CB15 /* Braille University */ = {
 			isa = PBXGroup;
 			children = (
+				014C77B91A00441D002C4BEF /* Images.xcassets */,
 				2E06A95F16DC4C8B0031250F /* UIAccessibilityZoom.h */,
 				2E3FCB8916D99E0B00D8CB15 /* AppDelegate.h */,
 				2E3FCB8A16D99E0B00D8CB15 /* AppDelegate.m */,
@@ -313,6 +316,7 @@
 				2E3FCB8D16D99E0B00D8CB15 /* Default.png in Resources */,
 				2E3FCB8F16D99E0B00D8CB15 /* Default@2x.png in Resources */,
 				2E3FCB9116D99E0B00D8CB15 /* Default-568h@2x.png in Resources */,
+				014C77BA1A00441D002C4BEF /* Images.xcassets in Resources */,
 				2E3FCB9416D99E0B00D8CB15 /* MainStoryboard_iPhone.storyboard in Resources */,
 				2E6F2C0917014BFF00805F9D /* easy.txt in Resources */,
 				2E6F2C0A17014BFF00805F9D /* intermediate.txt in Resources */,
@@ -487,6 +491,8 @@
 		2E3FCBB316D99E0B00D8CB15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -504,6 +510,8 @@
 		2E3FCBB416D99E0B00D8CB15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
