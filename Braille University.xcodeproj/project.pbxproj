@@ -10,6 +10,7 @@
 		01150DC11700CC050083A6E5 /* lessonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DBE1700CC050083A6E5 /* lessonController.m */; };
 		01150DC21700CC050083A6E5 /* tableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DC01700CC050083A6E5 /* tableViewController.m */; };
 		01150DC51700CDD90083A6E5 /* libraryViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 01150DC41700CDD90083A6E5 /* libraryViewControllerSubclass.m */; };
+		011CDBF31A004A8A00865BFA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011CDBF11A004A8A00865BFA /* MainStoryboard_iPad.storyboard */; };
 		014C77BA1A00441D002C4BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014C77B91A00441D002C4BEF /* Images.xcassets */; };
 		0161FBEB1700A987008B383F /* teachALessonViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */; };
 		0161FBEE1700B735008B383F /* saveViewControllerSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0161FBED1700B735008B383F /* saveViewControllerSubclass.m */; };
@@ -29,8 +30,8 @@
 		2E3FCBA416D99E0B00D8CB15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3FCB7C16D99E0B00D8CB15 /* Foundation.framework */; };
 		2E3FCBAC16D99E0B00D8CB15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3FCBAA16D99E0B00D8CB15 /* InfoPlist.strings */; };
 		2E3FCBAF16D99E0B00D8CB15 /* Braille_UniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FCBAE16D99E0B00D8CB15 /* Braille_UniversityTests.m */; };
-		2E6F2C0917014BFF00805F9D /* easy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F2C0717014BFE00805F9D /* easy.txt */; };
-		2E6F2C0A17014BFF00805F9D /* intermediate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F2C0817014BFF00805F9D /* intermediate.txt */; };
+		2E6F2C0917014BFF00805F9D /* Beginners.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F2C0717014BFE00805F9D /* Beginners.txt */; };
+		2E6F2C0A17014BFF00805F9D /* Intermediate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2E6F2C0817014BFF00805F9D /* Intermediate.txt */; };
 		2EEF1DD016F775770017E03D /* SelectableUILable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF1DCF16F775770017E03D /* SelectableUILable.m */; };
 		5B7461441701F1CA00766A84 /* textbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7461431701F1CA00766A84 /* textbookViewController.m */; };
 		5B781B0B17B488DC004333F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B781B0D17B488DC004333F1 /* Localizable.strings */; };
@@ -58,6 +59,7 @@
 		01150DC01700CC050083A6E5 /* tableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableViewController.m; sourceTree = "<group>"; };
 		01150DC31700CDD90083A6E5 /* libraryViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libraryViewControllerSubclass.h; sourceTree = "<group>"; };
 		01150DC41700CDD90083A6E5 /* libraryViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libraryViewControllerSubclass.m; sourceTree = "<group>"; };
+		011CDBF21A004A8A00865BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		014C77B91A00441D002C4BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		0161FBE91700A987008B383F /* teachALessonViewControllerSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teachALessonViewControllerSubclass.h; sourceTree = "<group>"; };
 		0161FBEA1700A987008B383F /* teachALessonViewControllerSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teachALessonViewControllerSubclass.m; sourceTree = "<group>"; };
@@ -89,8 +91,8 @@
 		2E3FCBAB16D99E0B00D8CB15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E3FCBAD16D99E0B00D8CB15 /* Braille_UniversityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Braille_UniversityTests.h; sourceTree = "<group>"; };
 		2E3FCBAE16D99E0B00D8CB15 /* Braille_UniversityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Braille_UniversityTests.m; sourceTree = "<group>"; };
-		2E6F2C0717014BFE00805F9D /* easy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = easy.txt; sourceTree = "<group>"; };
-		2E6F2C0817014BFF00805F9D /* intermediate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = intermediate.txt; sourceTree = "<group>"; };
+		2E6F2C0717014BFE00805F9D /* Beginners.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Beginners.txt; sourceTree = "<group>"; };
+		2E6F2C0817014BFF00805F9D /* Intermediate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Intermediate.txt; sourceTree = "<group>"; };
 		2EEF1DCE16F775770017E03D /* SelectableUILable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableUILable.h; sourceTree = "<group>"; };
 		2EEF1DCF16F775770017E03D /* SelectableUILable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableUILable.m; sourceTree = "<group>"; };
 		5B7461421701F1CA00766A84 /* textbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textbookViewController.h; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		2E3FCB8016D99E0B00D8CB15 /* Braille University */ = {
 			isa = PBXGroup;
 			children = (
+				011CDBF11A004A8A00865BFA /* MainStoryboard_iPad.storyboard */,
 				014C77B91A00441D002C4BEF /* Images.xcassets */,
 				2E06A95F16DC4C8B0031250F /* UIAccessibilityZoom.h */,
 				2E3FCB8916D99E0B00D8CB15 /* AppDelegate.h */,
@@ -200,8 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				5B7D67B4179E1074000C54FB /* doorbell2.wav */,
-				2E6F2C0717014BFE00805F9D /* easy.txt */,
-				2E6F2C0817014BFF00805F9D /* intermediate.txt */,
+				2E6F2C0717014BFE00805F9D /* Beginners.txt */,
+				2E6F2C0817014BFF00805F9D /* Intermediate.txt */,
 				2E3FCB8216D99E0B00D8CB15 /* Braille University-Info.plist */,
 				2E3FCB8316D99E0B00D8CB15 /* InfoPlist.strings */,
 				2E3FCB8616D99E0B00D8CB15 /* main.m */,
@@ -318,10 +321,11 @@
 				2E3FCB9116D99E0B00D8CB15 /* Default-568h@2x.png in Resources */,
 				014C77BA1A00441D002C4BEF /* Images.xcassets in Resources */,
 				2E3FCB9416D99E0B00D8CB15 /* MainStoryboard_iPhone.storyboard in Resources */,
-				2E6F2C0917014BFF00805F9D /* easy.txt in Resources */,
-				2E6F2C0A17014BFF00805F9D /* intermediate.txt in Resources */,
+				2E6F2C0917014BFF00805F9D /* Beginners.txt in Resources */,
+				2E6F2C0A17014BFF00805F9D /* Intermediate.txt in Resources */,
 				5B7D67B5179E1074000C54FB /* doorbell2.wav in Resources */,
 				5B781B0B17B488DC004333F1 /* Localizable.strings in Resources */,
+				011CDBF31A004A8A00865BFA /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		011CDBF11A004A8A00865BFA /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011CDBF21A004A8A00865BFA /* Base */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
 		2E3FCB8316D99E0B00D8CB15 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,7 +510,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Braille University/Braille University-Prefix.pch";
 				INFOPLIST_FILE = "Braille University/Braille University-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -517,7 +529,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Braille University/Braille University-Prefix.pch";
 				INFOPLIST_FILE = "Braille University/Braille University-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

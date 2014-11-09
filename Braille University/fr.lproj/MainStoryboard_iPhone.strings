@@ -44,8 +44,8 @@
 /* Class = "IBUIBarButtonItem"; title = "Back"; ObjectID = "Chh-e6-sak"; */
 "Chh-e6-sak.title" = "Back";
 
-/* Class = "IBUIButton"; normalTitle = "Easy"; ObjectID = "ERE-sj-PzH"; */
-"ERE-sj-PzH.normalTitle" = "Easy";
+/* Class = "IBUIButton"; normalTitle = "Beginners"; ObjectID = "ERE-sj-PzH"; */
+"ERE-sj-PzH.normalTitle" = "Introductives";
 
 /* Class = "IBUIButton"; normalTitle = "Save and Name Lesson"; ObjectID = "EbR-mV-6a1"; */
 "EbR-mV-6a1.normalTitle" = "Save and Name Lesson";

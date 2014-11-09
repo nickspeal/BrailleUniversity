@@ -40,7 +40,7 @@
 -(IBAction)easyButtonPressed {
     //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     //NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"easy" ofType:@"txt" inDirectory:@""];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Beginners" ofType:@"txt" inDirectory:@""];
     
     NSString *fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     
@@ -55,7 +55,7 @@
   //  NSString *documentsDirectory = [paths objectAtIndex:0];
  //  NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"intermediate.txt"];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"intermediate" ofType:@"txt" inDirectory:@""];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Intermediate" ofType:@"txt" inDirectory:@""];
     
     NSString *fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
     

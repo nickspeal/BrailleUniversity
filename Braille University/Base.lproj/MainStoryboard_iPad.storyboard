@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="0nL-JL-Ldg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="0nL-JL-Ldg">
     <dependencies>
-        <deployment version="1552" defaultVersion="1296" identifier="iOS"/>
+        <deployment version="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -28,11 +28,11 @@
             <objects>
                 <viewController id="g0g-CK-itu" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwa-8l-OA8">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7oX-VN-GSQ">
-                                <rect key="frame" x="0.0" y="38.5" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="104.5" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Start teaching a lesson and have it recorded for playback later" label="Teach a Lesson"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Teach a Lesson">
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OJw-YE-ceX">
-                                <rect key="frame" x="0.0" y="126" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="343.5" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Play back a previously recorded lesson"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Go to the Library">
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z2L-T2-nib">
-                                <rect key="frame" x="0.0" y="214" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="583.5" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Provides helpful information about the application and directions for using it"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Help Desk">
@@ -93,11 +93,11 @@
             <objects>
                 <viewController id="2" customClass="teachALessonViewControllerSubclass" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="583-OX-38m">
-                                <rect key="frame" x="0.0" y="33" width="320" height="383"/>
+                                <rect key="frame" x="0.0" y="577" width="320" height="383"/>
                                 <accessibility key="accessibilityConfiguration" hint="You'll get to save or quit on the next page"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="End Lesson">
@@ -112,7 +112,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="1oO-Lq-ThK" customClass="customUITextField">
-                                <rect key="frame" x="0.0" y="41" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="98.5" width="320" height="30"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <string key="hint">To record a lesson, begin typing what you want to appear on the braille output display. Press enter to move on to the next word.</string>
                                     <bool key="isElement" value="YES"/>
@@ -143,11 +143,11 @@
             <objects>
                 <viewController id="E6h-XM-poV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E3y-fh-SX4">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CLw-i0-zlJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <rect key="frame" x="0.0" y="160" width="320" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="Rj9-gj-MHj" userLabel="ViewTop">
                                         <rect key="frame" x="0.0" y="63" width="320" height="450"/>
@@ -247,11 +247,11 @@
             <objects>
                 <viewController id="6QS-9N-594" customClass="libraryViewControllerSubclass" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1c-W9-hEB">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mPP-r6-a4o">
-                                <rect key="frame" x="0.0" y="37.5" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="102" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Access your recorded lessons"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Lecture Notes">
@@ -267,7 +267,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v5B-is-BTE">
-                                <rect key="frame" x="0.0" y="125" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="340.5" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Access reference material"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Textbook">
@@ -297,13 +297,13 @@
             <objects>
                 <viewController id="2wp-1D-bNw" customClass="textbookViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgW-ws-XGm">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ERE-sj-PzH">
-                                <rect key="frame" x="0.0" y="36.5" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="99.5" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Beginners">
+                                <state key="normal" title="Beginner">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -316,7 +316,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fy8-qZ-EMi">
-                                <rect key="frame" x="0.0" y="124" width="320" height="112"/>
+                                <rect key="frame" x="0.0" y="345.5" width="320" height="112"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Intermediate">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -337,14 +337,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32w-Wx-0rB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1010" y="573"/>
+            <point key="canvasLocation" x="-1248" y="951"/>
         </scene>
         <!--Lecture Notes-->
         <scene sceneID="zFG-P5-ctX">
             <objects>
                 <tableViewController id="4sg-GR-5iE" customClass="tableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gnh-nd-VdG">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -352,7 +352,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -372,14 +372,39 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIP-kI-wIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-373" y="221"/>
+            <point key="canvasLocation" x="-1029" y="229"/>
+        </scene>
+        <!--Textbook-->
+        <scene sceneID="6iC-Dl-EY3">
+            <objects>
+                <viewController id="OpB-iX-bpw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywH-9A-6Rn">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location of preloaded material for practice.  May or may not be included in this project." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GO6-S7-hEw">
+                                <rect key="frame" x="0.0" y="129" width="320" height="82"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Textbook" id="ifg-dC-33H">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="O09-p8-aPd"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boA-4f-zgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="789"/>
         </scene>
         <!--Lesson Controller-->
         <scene sceneID="pZy-QQ-3TJ">
             <objects>
                 <tableViewController id="X63-IN-n8K" customClass="lessonController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jVD-K2-dYk">
-                        <rect key="frame" x="0.0" y="20" width="320" height="386"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="930"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -387,7 +412,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -404,18 +429,145 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpt-Xg-IbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73" y="235"/>
+            <point key="canvasLocation" x="-581" y="235"/>
+        </scene>
+        <!--Lecture Notes-->
+        <scene sceneID="1Lj-wl-So7">
+            <objects>
+                <viewController id="ZZz-TV-2vc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqC-JF-rvM">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rua-i4-zuW">
+                                <rect key="frame" x="0.0" y="110.5" width="320" height="101"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lesson 2">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZP9-DB-LgM" kind="push" id="rNI-QN-mfg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OaC-tu-QWh">
+                                <rect key="frame" x="0.0" y="357" width="320" height="101"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Lesson 1">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9qD-1j-ame" kind="push" id="1Zw-EO-at8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lecture Notes" id="yTo-oi-ci6">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Chh-e6-sak"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCt-qK-eeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-445"/>
+        </scene>
+        <!--Lesson 2-->
+        <scene sceneID="FXK-S1-48d">
+            <objects>
+                <viewController id="ZP9-DB-LgM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gB1-YR-mRa">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b65-Ux-ybW">
+                                <rect key="frame" x="0.0" y="102.5" width="320" height="84"/>
+                                <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hbL-zf-qMR">
+                                <rect key="frame" x="0.0" y="327.5" width="320" height="84"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="World" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ky-Ue-nFx">
+                                <rect key="frame" x="0.0" y="552.5" width="320" height="84"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lesson 2" id="l94-Df-WUU">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ijq-FV-cSK"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhw-h8-b4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-445"/>
+        </scene>
+        <!--Lesson 1-->
+        <scene sceneID="QMD-h7-Y1n">
+            <objects>
+                <viewController id="9qD-1j-ame" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZjB-Ze-9Ek">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUJ-3r-jEL">
+                                <rect key="frame" x="0.0" y="95" width="320" height="84"/>
+                                <string key="text">Move to your braille display to practice the lesson.  Read from the display and advance to the next item using the down button.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A A A A A A " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fZR-KK-u1d">
+                                <rect key="frame" x="0.0" y="415.5" width="320" height="84"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B B B B B B" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Euq-EF-0s3">
+                                <rect key="frame" x="0.0" y="641" width="320" height="84"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lesson 1" id="RB0-pB-jqe">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vUD-6Q-sBM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLf-on-rYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="174"/>
         </scene>
         <!--End Lesson-->
         <scene sceneID="Bvg-BD-oSp">
             <objects>
                 <viewController id="Sf5-1K-mpk" customClass="EndLessonViewControllerSubclass" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rtv-fJ-5Tn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EbR-mV-6a1">
-                                <rect key="frame" x="0.0" y="38.5" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="104.5" width="320" height="101"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save and Name Lesson">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -429,7 +581,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CCU-S6-xaq">
-                                <rect key="frame" x="0.0" y="126" width="320" height="101"/>
+                                <rect key="frame" x="0.0" y="343.5" width="320" height="101"/>
                                 <accessibility key="accessibilityConfiguration" hint="Don't save the lesson and return to the home screen"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done and Quit">
@@ -459,11 +611,11 @@
             <objects>
                 <viewController id="cor-E1-UNc" customClass="saveViewControllerSubclass" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6c-BC-BKa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Lesson" textAlignment="center" minimumFontSize="17" id="c0k-4k-y4h">
-                                <rect key="frame" x="0.0" y="41" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="98.5" width="320" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Enter the name of the lesson and press enter to save"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -492,11 +644,11 @@
             <objects>
                 <viewController id="EdX-xr-3Su" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fq6-k9-2dq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23z-xq-yU5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="461"/>
+                                <rect key="frame" x="0.0" y="271.5" width="320" height="461"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save Successful! Return to Campus">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
@@ -525,6 +677,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="kor-RU-NeU"/>
-        <segue reference="tQF-nS-UO7"/>
+        <segue reference="Pgv-Kz-k84"/>
     </inferredMetricsTieBreakers>
 </document>
