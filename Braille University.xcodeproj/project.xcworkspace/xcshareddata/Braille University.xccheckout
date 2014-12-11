@@ -14,7 +14,7 @@
 		<string>https://github.com/nickspeal/hciGit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Braille University.xcodeproj/project.xcworkspace</string>
+	<string>Braille University.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ED8D06840C45BFABE32BA7FC4163A9E7009B5649</key>
